@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RouteC">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <TextView
+                    android:id="@+id/c0_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:text="Hello, Cryptanalyst. \n\nLet's see your information... You're Syfer Liste, a top cryptanalyst from England huh... Ever tried to step into a real crime scene? \n\nAnyway, before the crime happened, we intercepted a message from the killer. Perhaps you could check it out? Just go to the electronic database, NOT the paper database. I'm sure you can find the way. \n\nTo access the database, just use your name. No capitals or space needed. \n\n--- C.S.I.B Director, Athello Apona "
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c1_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Info: There is a plan. The plan is almost finished."
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/c1_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c1_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/c1_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="c1Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c1_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Welcome to the Electronic Database, Listen. I heard from Apona that you’re going to have to access the Sigil Killer’s message? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the second word. It would be wonderful if you could go to the analysis lab in the first building here and talk to the specialist about it. I think he was Miro Jurisic? Remember, it’s not the room at the last end of the hallway. Anyways, Good luck.  \n\n--- C.S.I.B. Computer Forensic Department Director, Aring Tulan "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c2_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Info: Concept of Vessel"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/c2_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c2_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/c2_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="c2Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c2_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Doing a good job so far, Listen. Apparently there is some kind of plan that is maybe related to the case. Intriguing… I wonder if the cases before today also links towards the so-called plan… I’ll see if someone knows. I’ll possibly call Dr. Qiu if that’s the case… Anyway, now we now that there’s a plan of some sort, and it’s near finished. Pretty bad news… Our investigators tracked the IP address from the sender from the last address and found a database. We’re working on it, but it seems like there’s one document that is heavily encrypted. Can you help? Just meet us at the discussion room above the lab once you’re done. I think the last digits of the room ends in a 1. Send me an email about the decrypted file’s name. \n\n--- C.S.I.B Computer Forensic Department Director, Tulan"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2_puzzle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c2_puzzle_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:text="[Puzzle:\nOPENING evhhvo.txt…\nThe truth will be shown when the beginning is the end.\nGsv kozm uli yfrowrmt z evhhvo rh xlnrmt gl zm vmw. Hllm tolib droo wvhxvmw.]\n(Atbash cipher)"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        app:srcCompat="@drawable/c2_cipher" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c3_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Info: What are Vessels made of? "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/c3_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c3_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/c3_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="c3Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c3_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Hmm. A “vessel” huh… A vessel usually refers to some kind of hollowed containers---a box, if you will, but to contain something. What are they trying to contain? What is this person...or the group trying to do? \n\nI have a feeling that the “vessel” isn’t only just a box made out of wood and stuff. We’ve found a page from an encrypted diary here, but we don’t have the time to figure every word out. That’ll be your next mission. Just go to one of the labs in the building once you’ve figured out the highlighted word. You know, the one with ohmmeters and ammeters inside… I think it also functions as a classroom for new recruits. \n\n--- C.S.I.B Computer Forensic Department Director, Tulan "
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c4_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Info: First crime scene path"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/c4_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c4_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/c4_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="c4Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c4_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Oh. Oh no. This is terrifying. The vessel is made out of sensory organs… In a weird way this actually make sense! \n\nLet me explain. You know about the serial murder case that happened in the past few days, yeah? They are all missing out an organ. The first one missed both her eyes. The second one missed both his ears. The third one, her nose. The fourth one, his lips. The fifth one… her limbs. The related senses are also depicted in the sigil! \n\nThis must be related to the senses somehow too. There might be a “sixth sense” somehow… I’ll have to talk to Dr. Spitz somehow. In the meantime, we’ve hacked into the mainframe of the database and saw a map. We figured that this might be related to the first crime scene---yes, the first few bodies are all moved from somewhere. Can you find that place? Here is the map for you if you want to. Go to that place and input that name. \n\n\n--- C.S.I.B Computer Forensic Department Director, Tulan"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c5_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Info: Message -> “Suspect”"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/c5_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/c5_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Who You suspect"
+                            android:inputType="none|textNoSuggestions|textPersonName|text"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/c5_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="c5Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/c5_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="You are almost there, Listen. Good job on finding the first crime scene---you’ve been a great help, and we also learnt a lot about the Vessel, whatever it is. The last thing you need to do is to find the suspect. Unfortunately, the camera data was corrupted… Luckily, we have an AI that can mostly untangle the data. It can only do so much though---you’ll need to do the rest. \n\nGood luck. Report back to the crime scene of the sixth victim once you know who is the victim. \n\nKeep in mind that no analyst knows all the information---sometimes you just have to do what you can. \n\nRemember the words: SEEING IS BELIEVING. \n\nGoodbye for now, \n--- C.S.I.B Computer Forensic Department Director, Tulan"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_scan"
+        android:focusable="true" />
+
+</RelativeLayout>

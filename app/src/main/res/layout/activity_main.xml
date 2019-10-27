@@ -56,7 +56,9 @@
         android:layout_above="@id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="8dp"
-        android:text="Game Starts! >"
+        android:fontFamily="@font/feast_of_flesh_bb_regular"
+        android:onClick="start"
+        android:text="Game Starts! ▶"
         android:textSize="30sp" />
 
 </RelativeLayout>
