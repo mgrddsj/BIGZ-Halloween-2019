@@ -27,17 +27,20 @@ public class ScannerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanner);
-        final Activity activity = (Activity) getIntent().getSerializableExtra("activity");
         CodeScannerView scannerView = findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(this, scannerView);
         mCodeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
             public void onDecoded(@NonNull final Result result) {
-                activity.runOnUiThread(new Runnable() {
+                ScannerActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(activity, result.getText(), Toast.LENGTH_SHORT).show();
-                        finish();
+                        Toast.makeText(ScannerActivity.this, "Scanned! ", Toast.LENGTH_SHORT).show();
+                        try {
+                            RouteC.class.getDeclaredMethod("showC1");
+                        } catch (NoSuchMethodException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
             }

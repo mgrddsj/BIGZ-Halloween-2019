@@ -22,7 +22,7 @@ import java.io.Serializable;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class RouteC extends AppCompatActivity implements Serializable {
+public class RouteC extends AppCompatActivity {
     int animationTime;
 
     FloatingActionButton fab;
@@ -93,7 +93,6 @@ public class RouteC extends AppCompatActivity implements Serializable {
     public void startScanning()
     {
         Intent intent = new Intent(this, ScannerActivity.class);
-        intent.putExtra("activity", (Serializable) this);
         startActivity(intent);
     }
 
