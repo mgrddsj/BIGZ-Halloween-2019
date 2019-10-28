@@ -41,6 +41,7 @@ public class ScannerActivity extends AppCompatActivity {
                         } catch (NoSuchMethodException e) {
                             e.printStackTrace();
                         }
+                        finish();
                     }
                 });
             }
