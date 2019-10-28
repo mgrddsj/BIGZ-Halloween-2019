@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">BIGZ Halloween</string>
+    <string name="txt_c0"><![CDATA[
+<p>Hello, Cryptanalyst.</p>
+<p>Let\'s see your information... You\'re <b>Syfer Liste</b>, a top cryptanalyst from England huh... Ever tried to step into a real crime scene?</p>
+<p>Anyway, before the crime happened, we intercepted a message from the killer. Perhaps you could check it out? Just go to the <b>electronic database</b>, please NOT confuse it with the paper database. I\'m sure you can find the way.</p>
+<p>To <b>access the database</b>, just use your name. No capitals or space needed.</p>
+--- C.S.I.B Director, Athello Apona]]></string>
+    <string name="txt_hidden_c1">
+        <![CDATA[Welcome to the Electronic Database, Listen. I heard from Apona that you’re going to have to access the <b>Sigil Killer’s message</b>? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the <b>second word</b>. It would be wonderful if you could go to the analysis lab in the first building here and talk to the specialist about it. I think he was <b>Miro Jurisic</b>? Remember, it’s not the room at the last end of the hallway. Anyways, Good luck. <p></p>--- C.S.I.B. Computer Forensic Department Director, Aring Tulan]]>
+    </string>
 </resources>

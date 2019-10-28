@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -38,48 +39,49 @@ public class RouteC extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_c);
-        scanSetup();
+        fabSetup();
 
         animationTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
         c0 = findViewById(R.id.c0);
         c0.setAlpha(0f);
         c0.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c0_txt)).setText(Html.fromHtml(getString(R.string.txt_c0)));
 
         // Launch c1
 //        Handler handler = new Handler();
 //        handler.postDelayed(new Runnable() {
 //            @Override
 //            public void run() {
-//                c1 = findViewById(R.id.c1);
-//                showC1();
+                c1 = findViewById(R.id.c1);
+                showC1();
 //            }
 //        }, 10000);
 
         // launch c2
-//        c2 = findViewById(R.id.c2);
-//        showC2();
+        c2 = findViewById(R.id.c2);
+        showC2();
 
         // launch c3
-//        c3 = findViewById(R.id.c3);
-//        showC3();
+        c3 = findViewById(R.id.c3);
+        showC3();
 
         // launch c4
-//        c4 = findViewById(R.id.c4);
-//        showC4();
+        c4 = findViewById(R.id.c4);
+        showC4();
 
         // launch c5
-//        c5 = findViewById(R.id.c5);
-//        showC5();
+        c5 = findViewById(R.id.c5);
+        showC5();
     }
 
     @Override
     public void onBackPressed()
     {
-
+        // Do nothing when back is pressed.
     }
 
-    public void scanSetup()
+    public void fabSetup()
     {
         fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -101,6 +103,7 @@ public class RouteC extends AppCompatActivity {
         c1.setVisibility(View.VISIBLE);
         c1.setAlpha(0f);
         c1.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c1_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c1)));
     }
 
     public void showC2()
@@ -134,7 +137,7 @@ public class RouteC extends AppCompatActivity {
     public void c1Verify(View view)
     {
         EditText c1Input = findViewById(R.id.c1_input);
-        if (c1Input.getText().toString().equals("FINAL"))
+        if (c1Input.getText().toString().equals("syferliste"))
         {
             TextView c1Hidden = findViewById(R.id.c1_hidden_txt);
             final LinearLayout c1Password = findViewById(R.id.c1_password);
@@ -180,7 +183,7 @@ public class RouteC extends AppCompatActivity {
     public void c2Verify(View view)
     {
         EditText c2Input = findViewById(R.id.c2_input);
-        if (c2Input.getText().toString().equals("VESSEL"))
+        if (c2Input.getText().toString().equals("final"))
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
@@ -211,13 +214,13 @@ public class RouteC extends AppCompatActivity {
                 }
             });
 
-//            Handler handler = new Handler();
-//            handler.postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    showC2Puzzle();
-//                }
-//            }, 1000);
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    showC2Puzzle();
+                }
+            }, 1000);
         }
         else
         {
@@ -242,7 +245,7 @@ public class RouteC extends AppCompatActivity {
     public void c3Verify(View view)
     {
         EditText c3Input = findViewById(R.id.c3_input);
-        if (c3Input.getText().toString().equals("SENSORY"))
+        if (c3Input.getText().toString().equals("vessel"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
@@ -288,7 +291,7 @@ public class RouteC extends AppCompatActivity {
     public void c4Verify(View view)
     {
         EditText c4Input = findViewById(R.id.c4_input);
-        if (c4Input.getText().toString().equals("PINGPONG"))
+        if (c4Input.getText().toString().equals("sensory"))
         {
             TextView c4Hidden = findViewById(R.id.c4_hidden_txt);
             final LinearLayout c4Password = findViewById(R.id.c4_password);
@@ -334,7 +337,7 @@ public class RouteC extends AppCompatActivity {
     public void c5Verify(View view)
     {
         EditText c5Input = findViewById(R.id.c5_input);
-        if (c5Input.getText().toString().equals("Ahki Horatio"))
+        if (c5Input.getText().toString().equals("pingpong"))
         {
             TextView c5Hidden = findViewById(R.id.c5_hidden_txt);
             final LinearLayout c5Password = findViewById(R.id.c5_password);

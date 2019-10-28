@@ -62,15 +62,6 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c1_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:text="Info: There is a plan. The plan is almost finished."
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
                     <LinearLayout
                         android:id="@+id/c1_password"
                         android:layout_width="match_parent"
@@ -85,7 +76,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:hint="Tap to input Password"
-                            android:inputType="textPassword"
+                            android:inputType="text"
                             android:textColor="@android:color/black"
                             android:textColorHint="@android:color/darker_gray" />
 
@@ -103,10 +94,46 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:text="Welcome to the Electronic Database, Listen. I heard from Apona that you’re going to have to access the Sigil Killer’s message? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the second word. It would be wonderful if you could go to the analysis lab in the first building here and talk to the specialist about it. I think he was Miro Jurisic? Remember, it’s not the room at the last end of the hallway. Anyways, Good luck.  \n\n--- C.S.I.B. Computer Forensic Department Director, Aring Tulan "
+                        android:text="Welcome to the Electronic Database, Liste. I heard from Apona that you’re going to have to access the Sigil Killer’s message? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the second word. It would be wonderful if you could go to the analysis lab in the first building here, I think it was Miro Jurisic that is in charge? Anyways, Good luck.\n\n--- C.S.I.B. Computer Forensic Department Director, Aring Tulan"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1_puzzle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/c1_puzzle_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:text="Puzzle:\nAol mpuhs wohzl vm aol wshu ohz illu mpupzolk. Vusf aptl hdhpaz.\nProgress in decoding:\nThe ????? phase of the plan has been finished. Only time awaits"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -133,15 +160,6 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c2_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:text="Info: Concept of Vessel"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
                     <LinearLayout
                         android:id="@+id/c2_password"
                         android:layout_width="match_parent"
@@ -156,7 +174,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:hint="Tap to input Password"
-                            android:inputType="textPassword"
+                            android:inputType="text"
                             android:textColor="@android:color/black"
                             android:textColorHint="@android:color/darker_gray" />
 
@@ -174,7 +192,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:text="Doing a good job so far, Listen. Apparently there is some kind of plan that is maybe related to the case. Intriguing… I wonder if the cases before today also links towards the so-called plan… I’ll see if someone knows. I’ll possibly call Dr. Qiu if that’s the case… Anyway, now we now that there’s a plan of some sort, and it’s near finished. Pretty bad news… Our investigators tracked the IP address from the sender from the last address and found a database. We’re working on it, but it seems like there’s one document that is heavily encrypted. Can you help? Just meet us at the discussion room above the lab once you’re done. I think the last digits of the room ends in a 1. Send me an email about the decrypted file’s name. \n\n--- C.S.I.B Computer Forensic Department Director, Tulan"
+                        android:text="Doing a good job so far, Liste. Apparently there is some kind of plan that is maybe related to the case. Intriguing… I wonder if the cases before today also links towards the so-called plan… I’ll see if someone knows. I’ll possibly call Dr. Qiu if that’s the case… Anyway, now we now that there’s a plan of some sort, and it’s near finished. Pretty bad news… Our investigators tracked the IP address from the sender from the last address and found a database. We’re working on it, but it seems like there’s one document that is heavily encrypted. Can you help? Just meet us at the discussion room above the lab once you’re done. I think the last digits of the room ends in a 1. Send me an email about the decrypted file’s name. \n\n--- C.S.I.B Computer Forensic Department Director, Tulan"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:visibility="gone" />
@@ -211,7 +229,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:text="[Puzzle:\nOPENING evhhvo.txt…\nThe truth will be shown when the beginning is the end.\nGsv kozm uli yfrowrmt z evhhvo rh xlnrmt gl zm vmw. Hllm tolib droo wvhxvmw.]\n(Atbash cipher)"
+                        android:text="Puzzle2:\n[The truth will be shown when the beginning is the end.]\n\nOPENING evhhvo.txt…\nGsv kozm uli yfrowrmt z evhhvo rh xlnrmt gl zm vmw. Hllm tolib droo wvhxvmw."
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -247,15 +265,6 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c3_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:text="Info: What are Vessels made of? "
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
                     <LinearLayout
                         android:id="@+id/c3_password"
                         android:layout_width="match_parent"
@@ -270,7 +279,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:hint="Tap to input Password"
-                            android:inputType="textPassword"
+                            android:inputType="text"
                             android:textColor="@android:color/black"
                             android:textColorHint="@android:color/darker_gray" />
 
@@ -318,15 +327,6 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c4_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:text="Info: First crime scene path"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
                     <LinearLayout
                         android:id="@+id/c4_password"
                         android:layout_width="match_parent"
@@ -341,7 +341,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:hint="Tap to input Password"
-                            android:inputType="textPassword"
+                            android:inputType="text"
                             android:textColor="@android:color/black"
                             android:textColorHint="@android:color/darker_gray" />
 
@@ -389,14 +389,9 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c5_txt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
-                        android:text="Info: Message -> “Suspect”"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
 
                     <LinearLayout
                         android:id="@+id/c5_password"
@@ -411,8 +406,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:hint="Tap to input Who You suspect"
-                            android:inputType="none|textNoSuggestions|textPersonName|text"
+                            android:hint="Tap to input Password"
+                            android:inputType="text"
                             android:textColor="@android:color/black"
                             android:textColorHint="@android:color/darker_gray" />
 
@@ -430,7 +425,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#FFFFFF"
-                        android:text="You are almost there, Listen. Good job on finding the first crime scene---you’ve been a great help, and we also learnt a lot about the Vessel, whatever it is. The last thing you need to do is to find the suspect. Unfortunately, the camera data was corrupted… Luckily, we have an AI that can mostly untangle the data. It can only do so much though---you’ll need to do the rest. \n\nGood luck. Report back to the crime scene of the sixth victim once you know who is the victim. \n\nKeep in mind that no analyst knows all the information---sometimes you just have to do what you can. \n\nRemember the words: SEEING IS BELIEVING. \n\nGoodbye for now, \n--- C.S.I.B Computer Forensic Department Director, Tulan"
+                        android:text="You are almost there, Liste. Good job on finding the first crime scene---you’ve been a great help, and we also learnt a lot about the Vessel, whatever it is. The last thing you need to do is to find the suspect. Unfortunately, the camera data was corrupted… Luckily, we have an AI that can mostly untangle the data. It can only do so much though---you’ll need to do the rest. \n\nGood luck. Report back to the crime scene of the sixth victim once you know who is the victim. \n\nKeep in mind that no analyst knows all the information---sometimes you just have to do what you can. \n\nRemember the words: SEEING IS BELIEVING. \n\nGoodbye for now, \n--- C.S.I.B Computer Forensic Department Director, Tulan"
                         android:textColor="@android:color/black"
                         android:textSize="18sp"
                         android:visibility="gone" />
@@ -438,6 +433,10 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
 
         </LinearLayout>
     </ScrollView>
