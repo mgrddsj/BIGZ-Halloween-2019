@@ -9,6 +9,7 @@
 <!--        <item name="android:background">@android:color/black</item>-->
         <item name="android:windowBackground">@android:color/black</item>
         <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="colorControlNormal">#ff9251</item>
     </style>
 
 </resources>

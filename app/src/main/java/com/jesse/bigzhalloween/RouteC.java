@@ -29,11 +29,15 @@ public class RouteC extends AppCompatActivity {
     FloatingActionButton fab;
     CardView c0;
     CardView c1;
+    CardView c1Puzzle;
     CardView c2;
     CardView c2Puzzle;
     CardView c3;
+    CardView c3Puzzle;
     CardView c4;
+    CardView c4Puzzle;
     CardView c5;
+    CardView c5Puzzle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -106,11 +110,29 @@ public class RouteC extends AppCompatActivity {
         ((TextView) findViewById(R.id.c1_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c1)));
     }
 
+    public void showC1Puzzle()
+    {
+        c1Puzzle = findViewById(R.id.c1_puzzle);
+        c1Puzzle.setVisibility(View.VISIBLE);
+        c1Puzzle.setAlpha(0f);
+        c1Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c1_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c1_puzzle)));
+    }
+
     public void showC2()
     {
         c2.setVisibility(View.VISIBLE);
         c2.setAlpha(0f);
         c2.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c2_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c2)));
+    }
+
+    public void showC2Puzzle()
+    {
+        c2Puzzle = findViewById(R.id.c2_puzzle);
+        c2Puzzle.setVisibility(View.VISIBLE);
+        c2Puzzle.setAlpha(0f);
+        c2Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
     }
 
     public void showC3()
@@ -118,6 +140,16 @@ public class RouteC extends AppCompatActivity {
         c3.setVisibility(View.VISIBLE);
         c3.setAlpha(0f);
         c3.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c3_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c3)));
+    }
+
+    public void showC3Puzzle()
+    {
+        c3Puzzle = findViewById(R.id.c3_puzzle);
+        c3Puzzle.setVisibility(View.VISIBLE);
+        c3Puzzle.setAlpha(0f);
+        c3Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c3_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c3_puzzle)));
     }
 
     public void showC4()
@@ -125,6 +157,16 @@ public class RouteC extends AppCompatActivity {
         c4.setVisibility(View.VISIBLE);
         c4.setAlpha(0f);
         c4.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c4_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c4)));
+    }
+
+    public void showC4Puzzle()
+    {
+        c4Puzzle = findViewById(R.id.c4_puzzle);
+        c4Puzzle.setVisibility(View.VISIBLE);
+        c4Puzzle.setAlpha(0f);
+        c4Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c4_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c4_puzzle)));
     }
 
     public void showC5()
@@ -132,6 +174,16 @@ public class RouteC extends AppCompatActivity {
         c5.setVisibility(View.VISIBLE);
         c5.setAlpha(0f);
         c5.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c5_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c5)));
+    }
+
+    public void showC5Puzzle()
+    {
+        c5Puzzle = findViewById(R.id.c5_puzzle);
+        c5Puzzle.setVisibility(View.VISIBLE);
+        c5Puzzle.setAlpha(0f);
+        c5Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
+        ((TextView) findViewById(R.id.c4_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c5_puzzle)));
     }
 
     public void c1Verify(View view)
@@ -167,15 +219,18 @@ public class RouteC extends AppCompatActivity {
 
                 }
             });
+
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    showC1Puzzle();
+                }
+            }, 1000);
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT);
-            TextView textView = toast.getView().findViewById(android.R.id.message);
-            textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor("#07000000"));
-            toast.show();
-
+            Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT).show();
             c1Input.setText("");
         }
     }
@@ -224,22 +279,9 @@ public class RouteC extends AppCompatActivity {
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT);
-            TextView textView = toast.getView().findViewById(android.R.id.message);
-            textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor("#07000000"));
-            toast.show();
-
+            Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT).show();
             c2Input.setText("");
         }
-    }
-
-    public void showC2Puzzle()
-    {
-        c2Puzzle = findViewById(R.id.c2_puzzle);
-        c2Puzzle.setVisibility(View.VISIBLE);
-        c2Puzzle.setAlpha(0f);
-        c2Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
     }
 
     public void c3Verify(View view)
@@ -278,14 +320,16 @@ public class RouteC extends AppCompatActivity {
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT);
-            TextView textView = toast.getView().findViewById(android.R.id.message);
-            textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor("#07000000"));
-            toast.show();
-
+            Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT).show();
             c3Input.setText("");
         }
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showC3Puzzle();
+            }
+        }, 1000);
     }
 
     public void c4Verify(View view)
@@ -324,14 +368,16 @@ public class RouteC extends AppCompatActivity {
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT);
-            TextView textView = toast.getView().findViewById(android.R.id.message);
-            textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor("#07000000"));
-            toast.show();
-
+            Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT).show();
             c4Input.setText("");
         }
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showC4Puzzle();
+            }
+        }, 1000);
     }
 
     public void c5Verify(View view)
@@ -370,13 +416,20 @@ public class RouteC extends AppCompatActivity {
         }
         else
         {
-            Toast toast = Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT);
-            TextView textView = toast.getView().findViewById(android.R.id.message);
-            textView.setTextColor(Color.BLACK);
-            textView.setBackgroundColor(Color.parseColor("#07000000"));
-            toast.show();
-
+            Toast.makeText(this, "Wrong password! ", Toast.LENGTH_SHORT).show();
             c5Input.setText("");
         }
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                showC5Puzzle();
+            }
+        }, 1000);
+    }
+
+    public void checkSuspect(View view)
+    {
+
     }
 }

@@ -9,4 +9,81 @@
     <string name="txt_hidden_c1">
         <![CDATA[Welcome to the Electronic Database, Listen. I heard from Apona that you’re going to have to access the <b>Sigil Killer’s message</b>? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the <b>second word</b>. It would be wonderful if you could go to the analysis lab in the first building here and talk to the specialist about it. I think he was <b>Miro Jurisic</b>? Remember, it’s not the room at the last end of the hallway. Anyways, Good luck. <p></p>--- C.S.I.B. Computer Forensic Department Director, Aring Tulan]]>
     </string>
+    <string name="txt_c1_puzzle">
+        <![CDATA[
+<p>Puzzle 1:</p>
+<p>[Hint: The two lines below shows exactly the <strong>same information</strong>, try to find out the <strong>relationship</strong> between the letters and find what is the second word of the sentence.]</p>
+<p>Aol mpuhs wohzl vm aol wshu ohz illu mpupzolk. Vusf aptl hdhpaz.</p>
+<p>Progress in decoding:</p>
+The ????? phase of the plan has been finished. Only time awaits
+        ]]>
+    </string>
+    <string name="txt_hidden_c2">
+        <![CDATA[
+<p>Doing a good job so far, Liste. Apparently there is some kind of plan that is maybe related to the case. Intriguing&hellip; I wonder if the cases before today also links towards the so-called plan&hellip; I&rsquo;ll see if someone knows. I&rsquo;ll possibly call Dr. Qiu if that&rsquo;s the case&hellip; Anyway, now we know that there&rsquo;s a <strong>plan</strong> of some sort, and it&rsquo;s near <strong>finished</strong>. Pretty bad news&hellip; Our investigators tracked the IP address from the <strong>sender</strong> from the last address and found a database. We&rsquo;re working on it, but it seems like there&rsquo;s one document that is heavily encrypted. Can you help? Just meet us at the discussion room <strong>above the lab</strong> once you&rsquo;re done. I think the <strong>last digits</strong> of the room ends in a 1. When your there, send me the <strong>decrypted file&rsquo;s decrypted name</strong> that you&rsquo;ve got.</p>
+--- C.S.I.B Computer Forensic Department Director, Tulan
+        ]]>
+    </string>
+    <string name="txt_hidden_c3">
+        <![CDATA[
+<p>Hmm. A <strong>&ldquo;</strong><strong>vessel</strong><strong>&rdquo;</strong> huh&hellip; A vessel usually refers to some kind of hollowed <strong>containers</strong>---a box, if you will, but to contain something. What are they trying to contain? What is this <strong>person</strong>...or the<strong> group</strong> trying to do?</p>
+<p>I have a feeling that the <strong>&ldquo;</strong><strong>vessel</strong><strong>&rdquo;</strong> isn&rsquo;t only just a box made out of wood and stuff. We&rsquo;ve found a page from an encrypted diary here, but we don&rsquo;t have the time to figure every word out. That&rsquo;ll be your next mission. Just go to one of the labs in the building once you&rsquo;ve figured out the <strong>highlighted word</strong>. You know, the one with <strong>ohmmeters and ammeters</strong> inside&hellip; I think it also functions as a classroom for new recruits. Remember, it&rsquo;s not the room at the <strong>last end</strong> of the hallway.</p>
+--- C.S.I.B Computer Forensic Department Director, Tulan
+        ]]>
+    </string>
+    <string name="txt_c3_puzzle">
+        <![CDATA[
+<p>PUZZLE 3:</p>
+<p>[<strong>COORDINATES</strong>: (y,x),(y,x),(y,x),(y,x),(y,x),(y,x),(y,x)&hellip;]</p>
+422215441541411526452326261215311114153316422215<strong>41153241333651</strong>3336211132413316422215221536154223134115511541163336442341233332151136411633362215113623322131334342221633364134151125233221262331124116333616151526233221113214323341151633364131152626233221
+        ]]>
+    </string>
+    <string name="txt_hidden_c4">
+        <![CDATA[
+<p>Oh. Oh no. This is terrifying. The <strong>vessel </strong>is made out of <strong>sensory organs</strong>&hellip; In a weird way this actually make sense!</p>
+<p>Let me explain. You know about the <strong>serial murder case</strong> that happened in the past few days, yeah? They are all <strong>missing out an organ</strong>. The first one missed both her eyes. The second one missed both his ears. The third one, her nose. The fourth one, his lips. The fifth one&hellip; her limbs. The related senses are also depicted in the <strong>sigil</strong>!</p>
+<p>This must be related to the senses somehow too. There might be a <strong>&ldquo;sixth sense&rdquo;</strong> somehow&hellip; I&rsquo;ll have to talk to Dr. Spitz somehow. In the meantime, we&rsquo;ve hacked into the mainframe of the database and saw a map. We figured that this might be related to the <strong>first crime scene</strong>---yes, the first few bodies are all <strong>moved</strong> from somewhere. Can you find that place? Here is the map for you if you want to, try to trace the <strong>path</strong> of the delegates, trust your <strong>instinct</strong> and <strong>letters</strong> will be there. Go to that place and input the same word.</p>
+--- C.S.I.B Computer Forensic Department Director, Tulan
+]]>
+    </string>
+    <string name="txt_c4_puzzle">
+        <![CDATA[
+<p>Puzzle 4:</p>
+<p>New World Order Ceremonial Parade:</p>
+<p>Path of Delegate Horatio:</p>
+<p>Day 1: Krutardia, Roclif, Chevouerdon, Panolian</p>
+<p>Day 2: Bybia, Tampula</p>
+<p>&nbsp;</p>
+<p>Path of Delegate Osleton:</p>
+<p>Day 3: Bjernes, Roclif, Loskor, Moriatum</p>
+<p>Day 4: Makhusia, Burnorumia, Hofjorvo, Minato, Migterrian</p>
+<p>&nbsp;</p>
+<p>Path of Delegate Hyed:</p>
+<p>Day 5: Onainsia, Moriatum, Bybia, Migterrian</p>
+<p>Day 6: Mostian, Jistui, Isogu, Porvikemia, Mostian</p>
+<p>&nbsp;</p>
+<p>Path of Delegate Samson:</p>
+<p>Day 7: Bjernes, Roclif, Loskor, Moriatum</p>
+Day 8: Makhusia, Burnorumia, Hofjorvo, Minato, Migterrian
+        ]]>
+    </string>
+    <string name="txt_hidden_c5">
+        <![CDATA[
+<p>You are almost there, Liste. Good job on finding the first crime scene---you&rsquo;ve been a great help, and we also learnt a lot about the <strong>Vessel</strong>, whatever it is. The last thing you need to do is to find the <strong>suspect</strong>. Unfortunately, the camera data was corrupted&hellip; Luckily, we have an AI that can mostly untangle the data. It can only do so much though---you&rsquo;ll need to do the rest.</p>
+<p>Good luck. Report back to the <strong>crime scene</strong> of the sixth victim once you know who is the suspect.</p>
+<p>Keep in mind that no analyst knows all the information---sometimes you just have to do what you can.</p>
+<p>Remember the words: SEEING IS BELIEVING.</p>
+<p>Goodbye for now,</p>
+--- C.S.I.B Computer Forensic Department Director, Tulan
+        ]]>
+    </string>
+    <string name="txt_c5_puzzle">
+        <![CDATA[
+<p>Puzzle 5:</p>
+<p>[(A,B) = (word, letter)</p>
+<p>(password sequence, location)]</p>
+<p>DATA INFLUX. DATA INFLUX. ALL <strong>DATA SENT </strong><strong>FROM PREVIOUS CONNECTIONS</strong> HAS BEEN MIXED. REPEAT. DATA TNFLUX. ALL INPUT HAS BEEN MIXED.</p>
+14 ? ? 42 ? 35 36 14 ? 12 46
+        ]]>
+    </string>
 </resources>
