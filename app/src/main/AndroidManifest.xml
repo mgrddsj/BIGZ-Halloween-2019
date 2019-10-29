@@ -11,8 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScannerActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".RouteA"></activity>
+        <activity
+            android:name=".ScannerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".RouteC" />
         <activity android:name=".RouteSelectActivity" />
         <activity android:name=".MainActivity">

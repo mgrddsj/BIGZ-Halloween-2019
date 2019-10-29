@@ -6,7 +6,6 @@ import androidx.cardview.widget.CardView;
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
@@ -20,11 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.io.Serializable;
-import java.util.Timer;
-import java.util.TimerTask;
-
-public class RouteC extends AppCompatActivity {
+public class RouteA extends AppCompatActivity {
     int animationTime;
 
     FloatingActionButton fab;
@@ -59,8 +54,8 @@ public class RouteC extends AppCompatActivity {
 //        handler.postDelayed(new Runnable() {
 //            @Override
 //            public void run() {
-                c1 = findViewById(R.id.c1);
-                showC1();
+        c1 = findViewById(R.id.c1);
+        showC1();
 //            }
 //        }, 10000);
 

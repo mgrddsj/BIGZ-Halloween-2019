@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">BIGZ Halloween</string>
+    <string name="suspect_1">Suspect 1</string>
+    <string name="suspect_2">Suspect 2</string>
+    <string name="suspect_3">Suspect 3</string>
+    <string name="suspect_4">Suspect 4</string>
+    <string name="suspect_5">Suspect 5</string>
     <string name="txt_c0"><![CDATA[
 <p>Hello, Cryptanalyst.</p>
 <p>Let\'s see your information... You\'re <b>Syfer Liste</b>, a top cryptanalyst from England huh... Ever tried to step into a real crime scene?</p>
@@ -22,6 +27,14 @@ The ????? phase of the plan has been finished. Only time awaits
         <![CDATA[
 <p>Doing a good job so far, Liste. Apparently there is some kind of plan that is maybe related to the case. Intriguing&hellip; I wonder if the cases before today also links towards the so-called plan&hellip; I&rsquo;ll see if someone knows. I&rsquo;ll possibly call Dr. Qiu if that&rsquo;s the case&hellip; Anyway, now we know that there&rsquo;s a <strong>plan</strong> of some sort, and it&rsquo;s near <strong>finished</strong>. Pretty bad news&hellip; Our investigators tracked the IP address from the <strong>sender</strong> from the last address and found a database. We&rsquo;re working on it, but it seems like there&rsquo;s one document that is heavily encrypted. Can you help? Just meet us at the discussion room <strong>above the lab</strong> once you&rsquo;re done. I think the <strong>last digits</strong> of the room ends in a 1. When your there, send me the <strong>decrypted file&rsquo;s decrypted name</strong> that you&rsquo;ve got.</p>
 --- C.S.I.B Computer Forensic Department Director, Tulan
+        ]]>
+    </string>
+    <string name="txt_c2_puzzle">
+        <![CDATA[
+<p>[The truth will be shown when the <strong>beginning is the end</strong>]</p>
+<p>&nbsp;</p>
+<p>OPENING evhhvo.txt&hellip;</p>
+Gsv kozm uli yfrowrmt z evhhvo rh xlnrmt gl zm vmw. Hllm tolib droo wvhxvmw.
         ]]>
     </string>
     <string name="txt_hidden_c3">
