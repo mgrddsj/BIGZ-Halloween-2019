@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RouteA">
+    tools:context=".RouteP">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -131,7 +131,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:text="Puzzle:\nAol mpuhs wohzl vm aol wshu ohz illu mpupzolk. Vusf aptl hdhpaz.\nProgress in decoding:\nThe ????? phase of the plan has been finished. Only time awaits"
+                        android:text="[puzzle: please find clues in the room]"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -229,7 +229,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:text="Puzzle2:\n[The truth will be shown when the beginning is the end.]\n\nOPENING evhhvo.txt…\nGsv kozm uli yfrowrmt z evhhvo rh xlnrmt gl zm vmw. Hllm tolib droo wvhxvmw."
+                        android:text="[puzzle: please find clues in the room]"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 
@@ -239,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        app:srcCompat="@drawable/a2_puzzle_pic" />
+                        app:srcCompat="@drawable/c2_cipher" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -334,7 +334,7 @@
                         android:layout_margin="4dp"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        android:text="Puzzle3: \n[COORDINATES: (y,x),(y,x),(y,x),(y,x),(y,x),(y,x),(y,x)…] \n422215441541411526452326261215311114153316422215411532413336513336211132413316422215221536154223134115511541163336442341233332151136411633362215113623322131334342221633364134151125233221262331124116333616151526233221113214323341151633364131152626233221 "
+                        android:text="[puzzle: please find clues in the room]"
                         android:textColor="@android:color/black"
                         android:textSize="18sp" />
 

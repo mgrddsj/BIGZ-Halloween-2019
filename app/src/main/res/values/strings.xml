@@ -99,4 +99,74 @@ Day 8: Makhusia, Burnorumia, Hofjorvo, Minato, Migterrian
 14 ? ? 42 ? 35 36 14 ? 12 46
         ]]>
     </string>
+    <string name="txt_a0">
+        <![CDATA[
+<p>Hello, Agent.</p>
+<p>Welcome again, Agent Iskat Videlya. I assume your vacation back home in St. Petersburg was well? Anyway, time to work. You saw the crime scene---you know the drill. As a field agent, you need to find <strong><strong>witnesses</strong></strong>&nbsp;and <strong><strong>possible suspects</strong></strong>. I am looking forward to your success. Go to the building near the crime scene first---the <strong><strong>actors and actresses were rehearsing</strong></strong>. Perhaps they have some information?</p>
+<p>To <strong><strong>access the database</strong></strong>, just use your name. No capitals or space needed.</p>
+<p>&nbsp;</p>
+--- C.S.I.B Leader, Athello Apona
+        ]]>
+    </string>
+    <string name="txt_hidden_a1">
+        <![CDATA[
+<p>Agent Videlya, nice to see you again.</p>
+<p>We&rsquo;ve received a report that some actors in the theatre has spotted a strange man running off the crime scene. Seeing that the camera data got corrupted somehow, the only thing that we can rely on is the <strong><strong>witnesses</strong></strong>&nbsp;of the actors. However, their memories are fuzzy&hellip; See if you can find out the <strong><strong>characteristics</strong></strong>&nbsp;that the suspect have. We&rsquo;ve narrowed down to these <strong><strong>8 keywords</strong></strong>: Jewelry, Gemstone, Glasses, Red hair, Yellow watch, Green hat, tattoo.</p>
+<p>Once you know the accessories they talked about, go to the <strong><strong>financial tracking database</strong></strong>&nbsp;so that we can search for the <strong><strong>transaction data</strong></strong>&nbsp;for the accessories. I remember that the person governing this is <strong><strong>Mr. Schneider</strong></strong>. See if you can find him in his room.</p>
+--- C.S.I.B Information Department Head, Sunya Sunasapta
+        ]]>
+    </string>
+    <string name="txt_a1_puzzle">
+        <![CDATA[
+<p>Puzzle;1:</p>
+<p>[Each Witness provides one statement, only one of them are true, try to find out what the suspect is <strong><strong>wearing.</strong></strong>]</p>
+<p><br />Witness A: The suspect do not have some of the traits.</p>
+<p>Witness B: the Suspect show all of the traits.</p>
+<p>Witness C: The suspect did not wear gemstones</p>
+Witness D: The suspect wears a green hat.
+        ]]>
+    </string>
+    <string name="txt_hidden_a2">
+        <![CDATA[
+<p>Is this thing on?</p>
+<p>Hey Agent Videlya. I&rsquo;m currently busy right now, so I suppose you&rsquo;ll have to use the database on your own then. From what Sunasapta told me just now, it seems like the suspect purchased a lot of <strong><strong>gemstones</strong></strong>?</p>
+<p>This is weird. From what I can see, there is a spike in purchasing things that are directly linked to the <strong><strong>five senses</strong></strong>&hellip; For what I can find, here are the gems that are being purchased by a <strong><strong>suspicious credit card</strong></strong>---I think it&rsquo;s that <strong><strong>man</strong></strong>. Although, there seems to be a lot of decoy purchases. Can you help find out which <strong><strong>city</strong></strong>&nbsp;the <strong><strong>real purchases</strong></strong>&nbsp;are from? I have a feeling that that might be where our murderer comes from.</p>
+<p>Good luck! Once you get there, go to the <strong><strong>surveillance room</strong></strong>&nbsp;and message Sunasapta from there. It&rsquo;s in the <strong><strong>third building</strong></strong>, and it&rsquo;s being <strong><strong>disguised</strong></strong>&nbsp;as an entertainment room. The spears for weapons are even disguised as poles there! CSIB really did a good job on secrecy.</p>
+You might find <strong><strong>three documents</strong></strong>&nbsp;around this room useful.
+        ]]>
+    </string>
+    <string name="txt_a2_puzzle">
+        <![CDATA[
+<p>Puzzle 2:</p>
+<p>[Intercepted courtesy of Liste:</p>
+&ldquo;Remember to make your transactions in two places at the same time to confuse the police. All of the transactions will be send <strong><strong>t</strong></strong><strong><strong>hrough</strong></strong>&nbsp;the headquarters <strong><strong>directly</strong></strong>,&nbsp;then to a location where any other transactions occurred at the <strong><strong>same time</strong></strong>.&rdquo;]
+        ]]>
+    </string>
+    <string name="txt_p0">
+        <![CDATA[
+<p>Hello, Researcher.</p>
+<p>Welcome to China on behalf of the CSIB, Dr. Kurashiki. As a recommended researcher from the SCP Foundation Japanese branch, I trust you have a lot of experience on paranormal activities. We are suspecting that there are some strange activities involved---especially in one of the rooms here. It&rsquo;s a <strong><strong>strange room</strong></strong>---there&rsquo;s not a lot of it inside, only a <strong><strong>piano</strong></strong>, but lately something\'s happening there. You should start there first.</p>
+<p>To <strong><strong>access the database</strong></strong>, just use your name. No capitals or space needed.</p>
+--- C.S.I.B Leader, Athello Apona
+        ]]>
+    </string>
+    <string name="txt_hidden_p1">
+        <![CDATA[
+<p>Hello, Kurashiki. I am now talking to you through a transmitter, though I&rsquo;m afraid the connection is bad, and I might not be able to transmit <strong>real-time audio</strong>&nbsp;communications to you. So listen well.</p>
+<p>There has been some strange occurrences before the estimated time of death of the victim. We have the data now---I&rsquo;ll send it to you. It seems like it is a <strong><strong>symbol</strong></strong>---though we don&rsquo;t know what it means. However, there should be some<strong><strong>&nbsp;transcription and translation notes</strong></strong>&nbsp;in your room now somewhere. Try to find enough information to decipher the symbol&rsquo;s meaning. Once you know what it is, go to the <strong><strong>symbol room</strong></strong>---it&rsquo;s at your floor. Strangely, there are some <strong><strong>kitchen utensils</strong></strong>&nbsp;in that room alongside with <strong><strong>graph papers</strong></strong>.</p>
+Good luck. Sinclair out.
+        ]]>
+    </string>
+    <string name="txt_hidden_p2">
+        <![CDATA[
+<p>Well this is alarming. A <strong>symbol of death</strong>&hellip; According to my resources, they belong to a set of symbols called the <strong>Greco</strong>, as I call them, because of the supposedly <strong>link to Greek letters</strong>. They are simple, but using different <strong>frequencies of light</strong>&nbsp;we can actually observe a <strong>pattern</strong>. They seem to...fit into another. I&rsquo;ve sent you the analysis of the symbol you just translated. There should be<strong>&nbsp;9 more</strong>&nbsp;hidden around this room. Remember that the Grecos are linked to Greek letters? Well, there seemed to be <strong>2</strong>&nbsp;in this set of symbols. Try to find them and send the <strong>two</strong><strong>&rsquo;</strong><strong>s English name without spaces</strong>&nbsp;to me. I&rsquo;ll be waiting in the <strong>stenography room</strong>. The room [+number clues].</p>
+---SCP Foundation Head of Occult Studies and Thaumatology Division, Sinclair
+        ]]>
+    </string>
+    <string name="txt_hidden_p3">
+        <![CDATA[
+<p>This is alarming. Alpha and Omega mean &ldquo;<strong>create</strong>&rdquo; and &ldquo;<strong>destroy</strong>&rdquo;, and is common in <strong>rituals</strong>. And those are not good rituals, trust me. Almost all of them has a purpose of destroying the world and recreating them---hence &ldquo;Create&rdquo; and &ldquo;Destroy&rdquo;. I need more info, though---seems like analyzing the meaning &ldquo;Create&rdquo; and &ldquo;Destroy&rdquo; might work. There should be a <strong>wheel of names</strong>&nbsp;in the room---try to decipher the <strong>god</strong><strong>&rsquo;</strong><strong>s name</strong>&nbsp;using it. There should be <strong>12 letters</strong>&nbsp;for your result. Once you are done, send it to me at the <strong>mythology research department</strong>. Lately they&rsquo;ve been researching <strong>Greco-Roman mythology </strong>and they are learning the language of the <strong>Ancient Romans</strong>&nbsp;now. It&rsquo;s on the <strong>5th floor</strong>---I&rsquo;m sure you can find it.</p>
+---SCP Foundation Head of Occult Studies and Thaumatology Division, Sinclair
+        ]]>
+    </string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RouteA">
+    tools:context=".RouteH">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -239,7 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:background="#FFFFFF"
-                        app:srcCompat="@drawable/a2_puzzle_pic" />
+                        app:srcCompat="@drawable/c2_cipher" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

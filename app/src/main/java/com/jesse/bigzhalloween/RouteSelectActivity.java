@@ -25,4 +25,16 @@ public class RouteSelectActivity extends AppCompatActivity {
         Intent intent = new Intent(this, RouteA.class);
         startActivity(intent);
     }
+
+    public void gotoRouteH(View view)
+    {
+        Intent intent = new Intent(this, RouteH.class);
+        startActivity(intent);
+    }
+
+    public void gotoRouteP(View view)
+    {
+        Intent intent = new Intent(this, RouteP.class);
+        startActivity(intent);
+    }
 }

@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class RouteA extends AppCompatActivity {
+public class RouteP extends AppCompatActivity {
     int animationTime;
 
     FloatingActionButton fab;
@@ -39,7 +39,7 @@ public class RouteA extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_route_a);
+        setContentView(R.layout.activity_route_p);
         fabSetup();
 
         animationTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
@@ -47,7 +47,7 @@ public class RouteA extends AppCompatActivity {
         c0 = findViewById(R.id.c0);
         c0.setAlpha(0f);
         c0.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c0_txt)).setText(Html.fromHtml(getString(R.string.txt_a0)));
+        ((TextView) findViewById(R.id.c0_txt)).setText(Html.fromHtml(getString(R.string.txt_p0)));
 
         // Launch c1
 //        Handler handler = new Handler();
@@ -107,7 +107,7 @@ public class RouteA extends AppCompatActivity {
         c1.setVisibility(View.VISIBLE);
         c1.setAlpha(0f);
         c1.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c1_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_a1)));
+        ((TextView) findViewById(R.id.c1_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_p1)));
     }
 
     public void showC1Puzzle()
@@ -116,7 +116,6 @@ public class RouteA extends AppCompatActivity {
         c1Puzzle.setVisibility(View.VISIBLE);
         c1Puzzle.setAlpha(0f);
         c1Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c1_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a1_puzzle)));
     }
 
     public void showC2()
@@ -124,7 +123,7 @@ public class RouteA extends AppCompatActivity {
         c2.setVisibility(View.VISIBLE);
         c2.setAlpha(0f);
         c2.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c2_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_a2)));
+        ((TextView) findViewById(R.id.c2_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_p2)));
     }
 
     public void showC2Puzzle()
@@ -133,7 +132,6 @@ public class RouteA extends AppCompatActivity {
         c2Puzzle.setVisibility(View.VISIBLE);
         c2Puzzle.setAlpha(0f);
         c2Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c2_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a2_puzzle)));
     }
 
     public void showC3()
@@ -141,7 +139,7 @@ public class RouteA extends AppCompatActivity {
         c3.setVisibility(View.VISIBLE);
         c3.setAlpha(0f);
         c3.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c3_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c3)));
+        ((TextView) findViewById(R.id.c3_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_p3)));
     }
 
     public void showC3Puzzle()
@@ -150,7 +148,6 @@ public class RouteA extends AppCompatActivity {
         c3Puzzle.setVisibility(View.VISIBLE);
         c3Puzzle.setAlpha(0f);
         c3Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c3_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c3_puzzle)));
     }
 
     public void showC4()
@@ -198,7 +195,7 @@ public class RouteA extends AppCompatActivity {
     public void c1Verify(View view)
     {
         EditText c1Input = findViewById(R.id.c1_input);
-        if (c1Input.getText().toString().equals("iskatvidelya"))
+        if (c1Input.getText().toString().equals("sigmakurashiki"))
         {
             TextView c1Hidden = findViewById(R.id.c1_hidden_txt);
             final LinearLayout c1Password = findViewById(R.id.c1_password);
@@ -247,7 +244,7 @@ public class RouteA extends AppCompatActivity {
     public void c2Verify(View view)
     {
         EditText c2Input = findViewById(R.id.c2_input);
-        if (c2Input.getText().toString().equals("gemstone"))
+        if (c2Input.getText().toString().equals("death"))
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
@@ -296,7 +293,7 @@ public class RouteA extends AppCompatActivity {
     public void c3Verify(View view)
     {
         EditText c3Input = findViewById(R.id.c3_input);
-        if (c3Input.getText().toString().equals("paris"))
+        if (c3Input.getText().toString().equals("tezcatlipoca"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
@@ -344,7 +341,7 @@ public class RouteA extends AppCompatActivity {
     public void c4Verify(View view)
     {
         EditText c4Input = findViewById(R.id.c4_input);
-        if (c4Input.getText().toString().equals("pingpong"))
+        if (c4Input.getText().toString().equals("imitation"))
         {
             TextView c4Hidden = findViewById(R.id.c4_hidden_txt);
             final LinearLayout c4Password = findViewById(R.id.c4_password);
@@ -392,7 +389,7 @@ public class RouteA extends AppCompatActivity {
     public void c5Verify(View view)
     {
         EditText c5Input = findViewById(R.id.c5_input);
-        if (c5Input.getText().toString().equals("falloson"))
+        if (c5Input.getText().toString().equals("pingpong"))
         {
             TextView c5Hidden = findViewById(R.id.c5_hidden_txt);
             final LinearLayout c5Password = findViewById(R.id.c5_password);
