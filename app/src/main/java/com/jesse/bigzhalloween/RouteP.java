@@ -155,7 +155,7 @@ public class RouteP extends AppCompatActivity {
         c4.setVisibility(View.VISIBLE);
         c4.setAlpha(0f);
         c4.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c4_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c4)));
+        ((TextView) findViewById(R.id.c4_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_p4)));
     }
 
     public void showC4Puzzle()
@@ -164,7 +164,6 @@ public class RouteP extends AppCompatActivity {
         c4Puzzle.setVisibility(View.VISIBLE);
         c4Puzzle.setAlpha(0f);
         c4Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c4_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c4_puzzle)));
     }
 
     public void showC5()
@@ -172,7 +171,7 @@ public class RouteP extends AppCompatActivity {
         c5.setVisibility(View.VISIBLE);
         c5.setAlpha(0f);
         c5.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c5_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c5)));
+        ((TextView) findViewById(R.id.c5_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_p5)));
     }
 
     public void showC5Puzzle()
@@ -181,7 +180,6 @@ public class RouteP extends AppCompatActivity {
         c5Puzzle.setVisibility(View.VISIBLE);
         c5Puzzle.setAlpha(0f);
         c5Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c5_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c5_puzzle)));
     }
 
     public void showCSuspect()
@@ -293,7 +291,7 @@ public class RouteP extends AppCompatActivity {
     public void c3Verify(View view)
     {
         EditText c3Input = findViewById(R.id.c3_input);
-        if (c3Input.getText().toString().equals("tezcatlipoca"))
+        if (c3Input.getText().toString().equals("alphaomega"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
@@ -341,7 +339,7 @@ public class RouteP extends AppCompatActivity {
     public void c4Verify(View view)
     {
         EditText c4Input = findViewById(R.id.c4_input);
-        if (c4Input.getText().toString().equals("imitation"))
+        if (c4Input.getText().toString().equals("tezcatlipoca"))
         {
             TextView c4Hidden = findViewById(R.id.c4_hidden_txt);
             final LinearLayout c4Password = findViewById(R.id.c4_password);
@@ -389,7 +387,7 @@ public class RouteP extends AppCompatActivity {
     public void c5Verify(View view)
     {
         EditText c5Input = findViewById(R.id.c5_input);
-        if (c5Input.getText().toString().equals("pingpong"))
+        if (c5Input.getText().toString().equals("imitation"))
         {
             TextView c5Hidden = findViewById(R.id.c5_hidden_txt);
             final LinearLayout c5Password = findViewById(R.id.c5_password);

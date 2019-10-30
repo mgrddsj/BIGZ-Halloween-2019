@@ -169,4 +169,88 @@ Good luck. Sinclair out.
 ---SCP Foundation Head of Occult Studies and Thaumatology Division, Sinclair
         ]]>
     </string>
+    <string name="txt_hidden_p4">
+        <![CDATA[
+<p>&hellip;.Shoot.</p>
+<p>This is bad. Tezcatlipoca is the <strong>god of darkness</strong> in <strong>Aztec</strong>. There is only one cult that I know of that worships Tezcatlipoca---and they are definitely <strong>not the suspect</strong>. There are benevolent and they have alibis. I might try to contact with them to figure something out&hellip;</p>
+<p>In the meantime, there is an <strong>obscure worship ritual </strong>surrounding a <strong>single word</strong>---but I can&rsquo;t seem to find it. I&rsquo;ve discovered a <strong>video</strong> of that <strong>ritual</strong>, though---I&rsquo;ve left some camera feeds, annotated with movement lines. Try to see if you can figure it out.</p>
+<p>Once you&rsquo;re done, go to the <strong>signal tracking room</strong>. It is the room directly <strong>2 floors beneath</strong> you---and then go <strong>left 1 room</strong>. I think the director there is <strong>Ms. Haley Brill</strong>&hellip;</p>
+<p>Good luck,</p>
+---SCP Foundation Head of Occult Studies and Thaumatology Division, Sinclair
+        ]]>
+    </string>
+    <string name="txt_hidden_p5">
+        <![CDATA[
+<p>Good job. So, <strong>imitation</strong> huh&hellip;. I think I got it. I&rsquo;ve talked to the Bishop of the God of Tez, the benevolent one I told you about earlier. Adding with your information, I think I can track the <strong>suspect&rsquo;s signal</strong>!</p>
+<p>Although&hellip; the signal is <strong>jumbled</strong>. Very<strong> jumbled</strong>. You&rsquo;ll have to figure this one out. Only one step and you&rsquo;ll find out the suspect. I&rsquo;ll send the data to you&hellip; Good luck.</p>
+Remember the words:<strong> SENSES</strong> LIE SOMETIMES.
+        ]]>
+    </string>
+    <string name="txt_h0">
+        <![CDATA[
+<p>Hello, Researcher.</p>
+<p>Been expecting you here, Dr. Qiu. You are the go-to researcher in the Guangzhou faction here, anyway. We have been setting up a <strong>remote database</strong> in the<strong> third building </strong>for you here; unfortunately, due to cybersecurity concerns they are all in <strong>paper forms</strong>, We could only allow a <strong>couple computers</strong> there. Perhaps you could go take a look?</p>
+<p>To <strong>access the database</strong>, just use your name. No capitals or space needed.</p>
+--- C.S.I.B Leader, XXX
+        ]]>
+    </string>
+    <string name="txt_hidden_h1">
+        <![CDATA[
+<p>Hey Dr. Qiu,</p>
+<p>Welcome back to C.S.I.B! Let&rsquo;s get to work, shall we? We&rsquo;ve noticed some <strong>unique commonalities</strong> in the victim and the five cases before, and Dr. Spitz is currently working on it. However, he has sent you a preliminary corpse report. I&rsquo;ve also noticed that there is something <strong>peculiar but similar</strong> with these cases, the killer is doing something is not normal even for a murderer&hellip; Perhaps you could go look into the database? Here are the documents you might need. Once you noticed the strange actions of the killer, go to the lounge of the history department. I think it&rsquo;s on the <strong>first building</strong>, though you&rsquo;ll have to look for it yourself. I heard that a certain <strong>Ms. Settle</strong> is currently in charge of the lounge. Send me an email on what the killer did that might be strange once you&rsquo;re there.</p>
+C.S.I.B Historical Database Department Head, ABC.
+        ]]>
+    </string>
+    <string name="txt_h1_puzzle">
+        <![CDATA[
+<p>[Possible answers for the strangeness of these cases:</p>
+<p><strong>Cause of death, age, estimate time of death, anatomy, discovered place</strong>.]</p>
+Here are the victims portfolio created by the forensic scientist.
+        ]]>
+    </string>
+    <string name="txt_hidden_h2">
+        <![CDATA[
+<p>So the commonalities are that they all have one of their body parts removed, huh&hellip; And it seems like that they are all <strong>sensory organs</strong>. Hmmm&hellip; I can&rsquo;t help but shake the feeling that something like that also happened in the past, the researchers also found that there is some weird symbols embedded on every victims neck, they looks pretty familiar&hellip; Perhaps these documents can help? Also, I will send you the updated examination on the symbols. I recall that there is a certain <strong>civilization</strong> that likes such bloodshed. Go to the room <strong>2 floors directly above</strong> this room---that&rsquo;s our <strong>occult collection</strong>, if you do remember. Text me the civilization once you&rsquo;re there.</p>
+C.S.I.B Historical Database Department Head, ABC.
+        ]]>
+    </string>
+    <string name="txt_h2_puzzle">
+        <![CDATA[
+<p>Updated anatomy:</p>
+<p>[The document you found was a description of the symbols, they are known to be related to several letters, and the <strong>actual letter</strong> in this case should be related to the <strong>number of symbols</strong> found on the victim, the name of the <strong>civilization </strong>is probably some combination of the these letters. Try to combine them in a <strong>chronological order</strong>.]</p>
+<p>Victim 1: one symbol A was found on the victim&rsquo;s neck.</p>
+<p>Victim 2: two symbol B was found on the victim&rsquo;s neck.</p>
+<p>Victim 3: one symbol D was found on the victim&rsquo;s body.</p>
+<p>Victim 4: four symbol C was found on the victim&rsquo;s body.</p>
+Victim 5: three symbol E was found on the victim&rsquo;s body.
+        ]]>
+    </string>
+    <string name="txt_hidden_h3">
+        <![CDATA[
+<p>Hey. Sorry, I don&rsquo;t really have enough time to text you a new message, but yeah, I received yours. The <strong>Aztec civilization</strong>, huh&hellip; Wonder if there&rsquo;s anything related to this case. I have a bad feeling about this&hellip; There are known <strong>neo-Aztec cults</strong> nowadays as well. A few of them are harmless, but most of them&hellip; We&rsquo;ve lost a great number of our recruits <strong>fighting</strong> them just last year. Something must be related&hellip;</p>
+<p>Try to find something---everything is in this room that you are now in. I&rsquo;ll send some info as well. Go to the smaller-scale paper database in the third building once you&rsquo;re finished researching. Remember everything you read here.</p>
+---C.S.I.B Historical Database Department Head, ABC.
+        ]]>
+    </string>
+    <string name="txt_h3_puzzle">
+        <![CDATA[
+
+        ]]>
+    </string>
+    <string name="txt_hidden_h4">
+        <![CDATA[
+<p>Welcome to the top secret database, Dr. Qiu.</p>
+<p>That is a lot of information thrown at you, isn&rsquo;t it? Well, that&rsquo;s for a reason---</p>
+<p>According to your research that you just did, we strongly suspect that a <strong>neo-Aztec cult</strong> is at fault here.</p>
+<p>Here are some files we found from Aztec ruins. These are the maximum that we can do. Try to figure out the <strong>headquarters </strong>of this cult. Then head to the room beside the <strong>electronic database</strong>. It&rsquo;s to the <strong>left.</strong></p>
+<p>Good luck. Text me the <strong>location of the headquaters</strong> once you get there.</p>
+---C.S.I.B Historical Database Department Head, ABC.
+        ]]>
+    </string>
+    <string name="txt_h4_puzzle">
+        <![CDATA[
+<p>[Somethings <strong>wrong</strong> with the text below, the whole text looks weird, try to <strong>correct</strong> the text and the <strong>location of the headquarters</strong> should be hiding in the text you <strong>deleted</strong>.]</p>
+&ldquo;To give ligght, they needed a god to becoume the sun and the Black Tezcatlipoca was chosaen, but either becanuse he had lost a legg or because he was god of the night, he only managed to become half a sun. Tzhe world continued on in this way for some time, but a sibling rivalry grew betweenh Quetzalcoatl and his brother the mighty sun, who Quetzalcoatl knoocked from the sky with a stone club. With nou sun, the world was totally black and in his anger, Tezcatlipoca commanded his jaguars to eat all the people.&rdquo;
+        ]]>
+    </string>
 </resources>
