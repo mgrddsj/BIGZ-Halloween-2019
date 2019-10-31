@@ -292,7 +292,20 @@ DJWOCKAEIDMCYTCAIEKCNDOCKELQAUCJEKSUAWNXHM***data corrupted****
     </string>
     <string name="txt_a4_puzzle">
         <![CDATA[
-
+<p>Puzzle 4:</p>
+<p>2DELPHI TESTING DATA --- FOR REFERENCE ONLY:</p>
+<p>Input: Red hair, black eyes, 20-50 yrs</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Output: #H100 #E111 ##25</p>
+<p>Input: Yellow hair, green eyes, 10-20yrs</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Output: #H010 #E010 ##12</p>
+<p>Input: Purple hair, red eyes, 40-50 yrs</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Output: #H101 #E100 ##45</p>
+<p>Input: Green hair, purple eyes, 20-40 yrs</p>
+<p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Output: #H110 #E101 ##24</p>
+<p>&nbsp;</p>
+<p>&nbsp;Outputting results&hellip;</p>
+<p>Known attributes of 2D Face model:</p>
+#H000 #E001 ##34
         ]]>
     </string>
     <string name="txt_hidden_a5">
@@ -309,7 +322,22 @@ DJWOCKAEIDMCYTCAIEKCNDOCKELQAUCJEKSUAWNXHM***data corrupted****
     </string>
     <string name="txt_a5_puzzle">
         <![CDATA[
-
+<p>Puzzle 5:</p>
+<p>Interrogator: Mr. Falloson.&nbsp;</p>
+<p>Falloson: ...What?</p>
+<p>I: You have been charged with assisted murder, and we have reason to believe that someone is ordering you to do this. Who?</p>
+<p>F: ...Why do I need to tell you?</p>
+<p>I: Do you not realize the situation you are it?</p>
+<p>F: Situation? Ha! Dude, I expected that you&rsquo;ll catch me this time, y&rsquo;know? I&rsquo;m just a decoy. Looks like CSIB are really just a bunch of weakings.</p>
+<p>I: Sorry, could you say that again?</p>
+<p>F: I SAID, you guys are a bunch of WEAKLINGS! I bet even if I give you hints, you won&rsquo;t be able to tell who the boss is. Do you know his last name and mine rhymes?</p>
+<p>I: Okay&hellip;</p>
+<p>F: And since I&rsquo;m soooo generous, I&rsquo;ll give you some more hints! If your intel is even slightly capable, you would&rsquo;ve known that his last name has the same amount of letters as [DATA CORRUPTED. POSSIBLE MATCH: THIRD PASS] and his first name has the same numbers of letters as a red [DATA CORRUPTED. POSSIBLE MATCH: FIRST PASS]!</p>
+<p>I: Thank you for the information.</p>
+<p>F: I bet you can&rsquo;t do anything about it still, huh? Even if I told you if [DATA CORRUPTED: POSSIBLE MATCH: SECOND PASS] was his middle name his name will have a syllable count of 1, 2, 3, you guys won&rsquo;t be able to find him!</p>
+<p>I: ...</p>
+<p>&nbsp;</p>
+(... is intentional.)
         ]]>
     </string>
     <string name="txt_f0">
@@ -389,6 +417,15 @@ This is truly very weird, what is going on in the <strong>subcortex</strong>&nbs
     <string name="txt_f5_puzzle">
         <![CDATA[
 TIME IS OF THE ESSENCE. FOCUS ON POSITION IN THE ALPHABET
+        ]]>
+    </string>
+    <string name="txt_help">
+        <![CDATA[
+<p>To the players:</p>
+<p>This game is very simple to operate. It is our version of a scavenger hunt. In order to proceed, you only need to find <strong>two things</strong> in every information we give. One is the <strong>location</strong> where the next QR code is hiding, and the<strong> password</strong> that you need in order to gain access to the information. The location will be hinted in the <strong>text</strong>, try to relate the room that the instructor likes you to go to one of the <strong>rooms in our school.</strong> The password will be the <strong>answer of the puzzle</strong>, and the puzzle will be distinguished from the text in the app.</p>
+<p>We are also a role playing game, there are five characters involved in this murder case. The forensic scientist, paranormal scientist, field agent, cryptanalyst, and historian. Feel free to be anyone you want, but once you choose, you <strong>can&rsquo;</strong><strong>t change</strong> you character. If you want some more challenge, we recommend you to choose the paranormal scientist, the puzzles provided is <strong>harder</strong> than the other routes.</p>
+<p>Some of the puzzle might be a little difficult, you can discuss with other players that is playing in the same route, or even team up with others and play on the same phone. When you really can&rsquo;t solve the puzzle, always feel free to come to the initial location and ask the <strong>staff</strong> for the <strong>password </strong>by telling them which character you are and which stage you are in. For example, the third stage of the cryptanalyst can be called C-3. However, YOU WILL NOT ENJOY THE PROCESS AS MUCH IF YOU DO SO.</p>
+<strong>REMEMBER,</strong> if you found a room that is not accessible, refer back here: If you are asked to go to the ping pong room, look around in the right side hallway of that floor, if it is the library, go to the left entrance to find the code, if it is the discussion room inside the library, go to the right entrance, for the small library, simply look around the left hallway on that floor.&nbsp;
         ]]>
     </string>
 </resources>

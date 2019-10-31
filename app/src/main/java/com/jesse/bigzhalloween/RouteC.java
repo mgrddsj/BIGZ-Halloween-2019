@@ -7,7 +7,9 @@ import androidx.cardview.widget.CardView;
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
@@ -15,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -44,6 +47,8 @@ public class RouteC extends AppCompatActivity {
     CardView c5Puzzle;
     CardView cSuspect;
 
+    MediaPlayer audioText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,34 +61,14 @@ public class RouteC extends AppCompatActivity {
         c0.animate().alpha(1f).setDuration(animationTime).setListener(null);
         ((TextView) findViewById(R.id.c0_txt)).setText(Html.fromHtml(getString(R.string.txt_c0)));
 
-        // Launch c1
-//        Handler handler = new Handler();
-//        handler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
-                c1 = findViewById(R.id.c1);
-//                showC1();
-////            }
-////        }, 10000);
-//
-//        // launch c2
+        c1 = findViewById(R.id.c1);
         c2 = findViewById(R.id.c2);
-//        showC2();
-//
-//        // launch c3
         c3 = findViewById(R.id.c3);
-//        showC3();
-//
-//        // launch c4
         c4 = findViewById(R.id.c4);
-//        showC4();
-//
-//        // launch c5
         c5 = findViewById(R.id.c5);
-//        showC5();
 
-        // launch suspect selection
-//        showCSuspect();
+        audioText = MediaPlayer.create(this, R.raw.sum);
+        
     }
 
     @Override
@@ -143,6 +128,12 @@ public class RouteC extends AppCompatActivity {
                     }
             }
         }
+    }
+
+    public void start(View view)
+    {
+        Intent intent = new Intent(this, HelpInGame.class);
+        startActivity(intent);
     }
 
     public void showC1()
@@ -498,6 +489,21 @@ public class RouteC extends AppCompatActivity {
                 break;
             default:
                 break;
+        }
+    }
+
+    public void playButton(View view)
+    {
+        ImageView imageView = (ImageView) view;
+        if (!audioText.isPlaying())
+        {
+            imageView.setImageResource(R.drawable.ic_pause);
+            audioText.start();
+        }
+        else
+        {
+            imageView.setImageResource(R.drawable.ic_play);
+            audioText.pause();
         }
     }
 }

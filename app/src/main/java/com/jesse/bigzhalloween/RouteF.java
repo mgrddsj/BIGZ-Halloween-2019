@@ -102,6 +102,12 @@ public class RouteF extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void start(View view)
+    {
+        Intent intent = new Intent(this, HelpInGame.class);
+        startActivity(intent);
+    }
+
     public void showC1()
     {
         c1.setVisibility(View.VISIBLE);
