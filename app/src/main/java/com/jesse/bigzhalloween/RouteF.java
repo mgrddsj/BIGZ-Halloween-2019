@@ -197,7 +197,7 @@ public class RouteF extends AppCompatActivity {
     public void c1Verify(View view)
     {
         EditText c1Input = findViewById(R.id.c1_input);
-        if (c1Input.getText().toString().equals("zielspitz"))
+        if (c1Input.getText().toString().equalsIgnoreCase("zielspitz"))
         {
             TextView c1Hidden = findViewById(R.id.c1_hidden_txt);
             final LinearLayout c1Password = findViewById(R.id.c1_password);
@@ -246,7 +246,7 @@ public class RouteF extends AppCompatActivity {
     public void c2Verify(View view)
     {
         EditText c2Input = findViewById(R.id.c2_input);
-        if (c2Input.getText().toString().equals("none"))
+        if (c2Input.getText().toString().equalsIgnoreCase("none"))
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
@@ -295,7 +295,7 @@ public class RouteF extends AppCompatActivity {
     public void c3Verify(View view)
     {
         EditText c3Input = findViewById(R.id.c3_input);
-        if (c3Input.getText().toString().equals("intensity"))
+        if (c3Input.getText().toString().equalsIgnoreCase("brain"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
@@ -343,7 +343,7 @@ public class RouteF extends AppCompatActivity {
     public void c4Verify(View view)
     {
         EditText c4Input = findViewById(R.id.c4_input);
-        if (c4Input.getText().toString().equals("subcortex"))
+        if (c4Input.getText().toString().equalsIgnoreCase("subcortex"))
         {
             TextView c4Hidden = findViewById(R.id.c4_hidden_txt);
             final LinearLayout c4Password = findViewById(R.id.c4_password);
@@ -391,7 +391,7 @@ public class RouteF extends AppCompatActivity {
     public void c5Verify(View view)
     {
         EditText c5Input = findViewById(R.id.c5_input);
-        if (c5Input.getText().toString().equals("aether"))
+        if (c5Input.getText().toString().equalsIgnoreCase("aether"))
         {
             TextView c5Hidden = findViewById(R.id.c5_hidden_txt);
             final LinearLayout c5Password = findViewById(R.id.c5_password);

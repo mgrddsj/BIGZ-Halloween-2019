@@ -11,6 +11,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
@@ -47,7 +48,6 @@ public class RouteC extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_c);
-        fabSetup();
 
         animationTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
@@ -62,28 +62,28 @@ public class RouteC extends AppCompatActivity {
 //            @Override
 //            public void run() {
                 c1 = findViewById(R.id.c1);
-                showC1();
-//            }
-//        }, 10000);
-
-        // launch c2
+//                showC1();
+////            }
+////        }, 10000);
+//
+//        // launch c2
         c2 = findViewById(R.id.c2);
-        showC2();
-
-        // launch c3
+//        showC2();
+//
+//        // launch c3
         c3 = findViewById(R.id.c3);
-        showC3();
-
-        // launch c4
+//        showC3();
+//
+//        // launch c4
         c4 = findViewById(R.id.c4);
-        showC4();
-
-        // launch c5
+//        showC4();
+//
+//        // launch c5
         c5 = findViewById(R.id.c5);
-        showC5();
+//        showC5();
 
         // launch suspect selection
-        showCSuspect();
+//        showCSuspect();
     }
 
     @Override
@@ -92,48 +92,55 @@ public class RouteC extends AppCompatActivity {
         // Do nothing when back is pressed.
     }
 
-    public void fabSetup()
-    {
-        fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startScanning();
-            }
-        });
-    }
+//    public void fabSetup()
+//    {
+//        fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+////                startScanning();
+//            }
+//        });
+//    }
 
-    public void startScanning()
+    public void startScanning(View view)
     {
-        Intent intent = new Intent(this, ScannerActivity.class);
-        startActivityForResult(intent, 233);
+        Intent intent = new Intent(RouteC.this, ScannerActivity.class);
+        startActivityForResult(intent, 1);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if (requestCode == 233)
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1)
         {
-            if (resultCode == RESULT_OK);
+            if (resultCode == RESULT_OK)
             {
-                Bundle scanResult = Objects.requireNonNull(data).getExtras();
-                int scanResultInt = (Integer)scanResult.get("result");
-                switch (scanResultInt)
-                {
+                Bundle resultBundle = data.getExtras();
+                int resultInt = resultBundle.getInt("result");
+                switch (resultInt) {
                     case 11:
                         showC1();
+                        break;
                     case 12:
                         showC2();
+                        break;
                     case 13:
                         showC3();
+                        break;
                     case 14:
                         showC4();
+                        break;
                     case 15:
                         showC5();
+                        break;
                     case 16:
                         showCSuspect();
+                        break;
                     default:
-                        Toast.makeText(this, "The QR Code you scanned cannot be recognized. ", Toast.LENGTH_SHORT);
-                }
+                        Toast.makeText(this, "Cannot recognize this QR code. ", Toast.LENGTH_SHORT);
+                        break;
+                    }
             }
         }
     }
@@ -234,7 +241,7 @@ public class RouteC extends AppCompatActivity {
     public void c1Verify(View view)
     {
         EditText c1Input = findViewById(R.id.c1_input);
-        if (c1Input.getText().toString().equals("syferliste"))
+        if (c1Input.getText().toString().equalsIgnoreCase("syferliste"))
         {
             TextView c1Hidden = findViewById(R.id.c1_hidden_txt);
             final LinearLayout c1Password = findViewById(R.id.c1_password);
@@ -283,7 +290,7 @@ public class RouteC extends AppCompatActivity {
     public void c2Verify(View view)
     {
         EditText c2Input = findViewById(R.id.c2_input);
-        if (c2Input.getText().toString().equals("final"))
+        if (c2Input.getText().toString().equalsIgnoreCase("final"))
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
@@ -332,7 +339,7 @@ public class RouteC extends AppCompatActivity {
     public void c3Verify(View view)
     {
         EditText c3Input = findViewById(R.id.c3_input);
-        if (c3Input.getText().toString().equals("vessel"))
+        if (c3Input.getText().toString().equalsIgnoreCase("vessel"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
@@ -380,7 +387,7 @@ public class RouteC extends AppCompatActivity {
     public void c4Verify(View view)
     {
         EditText c4Input = findViewById(R.id.c4_input);
-        if (c4Input.getText().toString().equals("sensory"))
+        if (c4Input.getText().toString().equalsIgnoreCase("sensory"))
         {
             TextView c4Hidden = findViewById(R.id.c4_hidden_txt);
             final LinearLayout c4Password = findViewById(R.id.c4_password);
@@ -428,7 +435,7 @@ public class RouteC extends AppCompatActivity {
     public void c5Verify(View view)
     {
         EditText c5Input = findViewById(R.id.c5_input);
-        if (c5Input.getText().toString().equals("pingpong"))
+        if (c5Input.getText().toString().equalsIgnoreCase("pingpong"))
         {
             TextView c5Hidden = findViewById(R.id.c5_hidden_txt);
             final LinearLayout c5Password = findViewById(R.id.c5_password);

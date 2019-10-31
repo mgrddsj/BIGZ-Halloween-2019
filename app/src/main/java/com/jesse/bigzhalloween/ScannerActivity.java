@@ -36,20 +36,7 @@ public class ScannerActivity extends AppCompatActivity {
                 ScannerActivity.this.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(ScannerActivity.this, "Scanned! ", Toast.LENGTH_SHORT).show();
-                        int resultInt = 60;
-                        try
-                        {
-                            resultInt = Integer.parseInt(result.getText());
-                        }
-                        catch (Exception e)
-                        {
-
-                        }
-                        Intent intent = new Intent();
-                        intent.putExtra("result", resultInt);
-                        setResult(RESULT_OK, intent);
-                        finish();
+                        returnData(result);
                     }
                 });
             }
@@ -70,6 +57,26 @@ public class ScannerActivity extends AppCompatActivity {
         } else {
             mPermissionGranted = true;
         }
+    }
+
+    public void returnData(Result result)
+    {
+//        Toast.makeText(ScannerActivity.this, "Scanned! ", Toast.LENGTH_SHORT).show();
+        int resultInt = 60;
+        try
+        {
+            resultInt = Integer.parseInt(result.getText());
+        }
+        catch (Exception e)
+        {
+
+        }
+        Intent intent = getIntent();
+        Bundle bundle = new Bundle();
+        bundle.putInt("result", resultInt);
+        intent.putExtras(bundle);
+        setResult(RESULT_OK, intent);
+        finish();
     }
 
     @Override
