@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -67,8 +68,44 @@ public class RouteC extends AppCompatActivity {
         c4 = findViewById(R.id.c4);
         c5 = findViewById(R.id.c5);
 
+        // Audio text
         audioText = MediaPlayer.create(this, R.raw.sum);
-        
+        audioText.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                ((ImageView) findViewById(R.id.c2_audio_button)).setImageResource(R.drawable.ic_play);
+            }
+        });
+        final SeekBar seekBar = findViewById(R.id.c2_audio_seekbar);
+        final Handler handler = new Handler();
+        seekBar.setMax(audioText.getDuration());
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                seekBar.setProgress(audioText.getCurrentPosition());
+                handler.postDelayed(this, 100);
+            }
+        };
+        runnable.run();
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (b)
+                {
+                    audioText.seekTo(i);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     @Override
@@ -285,11 +322,13 @@ public class RouteC extends AppCompatActivity {
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
+            LinearLayout c2Audio = findViewById(R.id.c2_audio);
 
             InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(c2Input.getWindowToken(), 0);
 
             c2Hidden.setVisibility(View.VISIBLE);
+            c2Audio.setVisibility(View.VISIBLE);
             c2Password.animate().alpha(0f).setDuration(animationTime).setListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
@@ -477,17 +516,11 @@ public class RouteC extends AppCompatActivity {
         int checkButton = radioGroup.getCheckedRadioButtonId();
         switch (checkButton)
         {
-            case R.id.c_suspect_1:
-                break;
-            case R.id.c_suspect_2:
-                break;
-            case R.id.c_suspect_3:
-                break;
             case R.id.c_suspect_4:
-                break;
-            case R.id.c_suspect_5:
+                startActivity(new Intent(this, Congrats.class));
                 break;
             default:
+                Toast.makeText(this, "Wrong answer, try again! ", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

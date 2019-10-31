@@ -6,14 +6,17 @@ import androidx.cardview.widget.CardView;
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +38,9 @@ public class RouteA extends AppCompatActivity {
     CardView c5;
     CardView c5Puzzle;
     CardView cSuspect;
+
+    MediaPlayer audioText;
+    MediaPlayer audioText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +83,88 @@ public class RouteA extends AppCompatActivity {
 
         // launch suspect selection
         showCSuspect();
+
+        // Audio text
+        audioText = MediaPlayer.create(this, R.raw.schneider);
+        audioText.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                ((ImageView) findViewById(R.id.c2_audio_button)).setImageResource(R.drawable.ic_play);
+            }
+        });
+        final SeekBar seekBar = findViewById(R.id.c2_audio_seekbar);
+        final Handler handler = new Handler();
+        seekBar.setMax(audioText.getDuration());
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                seekBar.setProgress(audioText.getCurrentPosition());
+                handler.postDelayed(this, 100);
+            }
+        };
+        runnable.run();
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (b)
+                {
+                    audioText.seekTo(i);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        // Audio text 2
+        audioText2 = MediaPlayer.create(this, R.raw.endgame_i);
+        audioText2.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                ((ImageView) findViewById(R.id.c3_audio_button)).setImageResource(R.drawable.ic_play);
+            }
+        });
+        final SeekBar seekBar2 = findViewById(R.id.c3_audio_seekbar);
+        final Handler handler2 = new Handler();
+        seekBar2.setMax(audioText2.getDuration());
+        Runnable runnable2 = new Runnable() {
+            @Override
+            public void run() {
+                seekBar2.setProgress(audioText2.getCurrentPosition());
+                handler2.postDelayed(this, 100);
+            }
+        };
+        runnable2.run();
+        seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener()
+        {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b)
+            {
+                if (b)
+                {
+                    audioText2.seekTo(i);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar)
+            {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar)
+            {
+
+            }
+        });
     }
 
     @Override
@@ -150,7 +238,6 @@ public class RouteA extends AppCompatActivity {
         c3Puzzle.setVisibility(View.VISIBLE);
         c3Puzzle.setAlpha(0f);
         c3Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c3_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a3_puzzle)));
     }
 
     public void showC4()
@@ -250,12 +337,14 @@ public class RouteA extends AppCompatActivity {
         if (c2Input.getText().toString().equalsIgnoreCase("gemstone"))
         {
             TextView c2Hidden = findViewById(R.id.c2_hidden_txt);
+            LinearLayout c2Audio = findViewById(R.id.c2_audio);
             final LinearLayout c2Password = findViewById(R.id.c2_password);
 
             InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(c2Input.getWindowToken(), 0);
 
             c2Hidden.setVisibility(View.VISIBLE);
+            c2Audio.setVisibility(View.VISIBLE);
             c2Password.animate().alpha(0f).setDuration(animationTime).setListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
@@ -444,17 +533,41 @@ public class RouteA extends AppCompatActivity {
         switch (checkButton)
         {
             case R.id.c_suspect_1:
-                break;
-            case R.id.c_suspect_2:
-                break;
-            case R.id.c_suspect_3:
-                break;
-            case R.id.c_suspect_4:
-                break;
-            case R.id.c_suspect_5:
+                startActivity(new Intent(this, Congrats.class));
                 break;
             default:
+                Toast.makeText(this, "Wrong answer, try again! ", Toast.LENGTH_SHORT).show();
                 break;
+        }
+    }
+
+    public void playButton(View view)
+    {
+        ImageView imageView = (ImageView) view;
+        if (!audioText.isPlaying())
+        {
+            imageView.setImageResource(R.drawable.ic_pause);
+            audioText.start();
+        }
+        else
+        {
+            imageView.setImageResource(R.drawable.ic_play);
+            audioText.pause();
+        }
+    }
+
+    public void playButton2(View view)
+    {
+        ImageView imageView = (ImageView) view;
+        if (!audioText2.isPlaying())
+        {
+            imageView.setImageResource(R.drawable.ic_pause);
+            audioText2.start();
+        }
+        else
+        {
+            imageView.setImageResource(R.drawable.ic_play);
+            audioText2.pause();
         }
     }
 }

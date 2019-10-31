@@ -161,6 +161,30 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/c2_audio"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/c2_audio_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50sp"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:onClick="playButton"
+                            app:srcCompat="@drawable/ic_play" />
+
+                        <SeekBar
+                            android:id="@+id/c2_audio_seekbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="10" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:id="@+id/c2_password"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -322,23 +346,27 @@
                 app:cardPreventCornerOverlap="true">
 
                 <LinearLayout
+                    android:id="@+id/c3_audio"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="4dp"
-                    android:background="#FFFFFF"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/c3_puzzle_txt"
+                    <ImageView
+                        android:id="@+id/c3_audio_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="playButton2"
+                        app:srcCompat="@drawable/ic_play" />
+
+                    <SeekBar
+                        android:id="@+id/c3_audio_seekbar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
-                        android:layout_weight="1"
-                        android:background="#FFFFFF"
-                        android:text="Puzzle3: \n[COORDINATES: (y,x),(y,x),(y,x),(y,x),(y,x),(y,x),(y,x)…] \n422215441541411526452326261215311114153316422215411532413336513336211132413316422215221536154223134115511541163336442341233332151136411633362215113623322131334342221633364134151125233221262331124116333616151526233221113214323341151633364131152626233221 "
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
-
+                        android:layout_gravity="center"
+                        android:layout_weight="10" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

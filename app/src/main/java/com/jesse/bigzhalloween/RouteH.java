@@ -6,14 +6,17 @@ import androidx.cardview.widget.CardView;
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Html;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,6 +40,8 @@ public class RouteH extends AppCompatActivity {
     CardView c5;
     CardView c5Puzzle;
     CardView cSuspect;
+
+    MediaPlayer audioText;
 
     String c4Password;
 
@@ -81,6 +86,45 @@ public class RouteH extends AppCompatActivity {
 
         // launch suspect selection
         showCSuspect();
+
+        // Audio text
+        audioText = MediaPlayer.create(this, R.raw.kennedy);
+        audioText.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                ((ImageView) findViewById(R.id.c2_audio_button)).setImageResource(R.drawable.ic_play);
+            }
+        });
+        final SeekBar seekBar = findViewById(R.id.c2_audio_seekbar);
+        final Handler handler = new Handler();
+        seekBar.setMax(audioText.getDuration());
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                seekBar.setProgress(audioText.getCurrentPosition());
+                handler.postDelayed(this, 100);
+            }
+        };
+        runnable.run();
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                if (b)
+                {
+                    audioText.seekTo(i);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
     }
 
     @Override
@@ -180,7 +224,7 @@ public class RouteH extends AppCompatActivity {
                 c4Password = "six";
                 break;
             default:
-                ((TextView) findViewById(R.id.c3_puzzle_txt)).setText("What was the holy number?");
+                ((TextView) findViewById(R.id.c3_puzzle_txt)).setText("What was the holy number? ");
                 c4Password = "five";
                 break;
         }
@@ -332,12 +376,14 @@ public class RouteH extends AppCompatActivity {
         if (c3Input.getText().toString().equalsIgnoreCase("aztec"))
         {
             TextView c3Hidden = findViewById(R.id.c3_hidden_txt);
+            LinearLayout c3Audio = findViewById(R.id.c2_audio);
             final LinearLayout c3Password = findViewById(R.id.c3_password);
 
             InputMethodManager imm = (InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE);
             imm.hideSoftInputFromWindow(c3Input.getWindowToken(), 0);
 
             c3Hidden.setVisibility(View.VISIBLE);
+            c3Audio.setVisibility(View.VISIBLE);
             c3Password.animate().alpha(0f).setDuration(animationTime).setListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
@@ -476,18 +522,27 @@ public class RouteH extends AppCompatActivity {
         int checkButton = radioGroup.getCheckedRadioButtonId();
         switch (checkButton)
         {
-            case R.id.c_suspect_1:
-                break;
-            case R.id.c_suspect_2:
-                break;
-            case R.id.c_suspect_3:
-                break;
-            case R.id.c_suspect_4:
-                break;
             case R.id.c_suspect_5:
+                startActivity(new Intent(this, Congrats.class));
                 break;
             default:
+                Toast.makeText(this, "Wrong answer, try again! ", Toast.LENGTH_SHORT).show();
                 break;
+        }
+    }
+
+    public void playButton(View view)
+    {
+        ImageView imageView = (ImageView) view;
+        if (!audioText.isPlaying())
+        {
+            imageView.setImageResource(R.drawable.ic_pause);
+            audioText.start();
+        }
+        else
+        {
+            imageView.setImageResource(R.drawable.ic_play);
+            audioText.pause();
         }
     }
 }
