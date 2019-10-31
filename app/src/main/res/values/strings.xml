@@ -183,7 +183,7 @@ Good luck. Sinclair out.
         <![CDATA[
 <p>Good job. So, <strong>imitation</strong> huh&hellip;. I think I got it. I&rsquo;ve talked to the Bishop of the God of Tez, the benevolent one I told you about earlier. Adding with your information, I think I can track the <strong>suspect&rsquo;s signal</strong>!</p>
 <p>Although&hellip; the signal is <strong>jumbled</strong>. Very<strong> jumbled</strong>. You&rsquo;ll have to figure this one out. Only one step and you&rsquo;ll find out the suspect. I&rsquo;ll send the data to you&hellip; Good luck.</p>
-Remember the words:<strong> SENSES</strong> LIE SOMETIMES.
+Remember the words:<strong> SENSES</strong> LIE SOMETIMES FOR OUR SAKE.
         ]]>
     </string>
     <string name="txt_h0">
@@ -251,6 +251,144 @@ Victim 5: three symbol E was found on the victim&rsquo;s body.
         <![CDATA[
 <p>[Somethings <strong>wrong</strong> with the text below, the whole text looks weird, try to <strong>correct</strong> the text and the <strong>location of the headquarters</strong> should be hiding in the text you <strong>deleted</strong>.]</p>
 &ldquo;To give ligght, they needed a god to becoume the sun and the Black Tezcatlipoca was chosaen, but either becanuse he had lost a legg or because he was god of the night, he only managed to become half a sun. Tzhe world continued on in this way for some time, but a sibling rivalry grew betweenh Quetzalcoatl and his brother the mighty sun, who Quetzalcoatl knoocked from the sky with a stone club. With nou sun, the world was totally black and in his anger, Tezcatlipoca commanded his jaguars to eat all the people.&rdquo;
+        ]]>
+    </string>
+    <string name="txt_hidden_h5">
+        <![CDATA[
+<p>Great job, Dr. Qiu. Wow, we are right on the <strong>enemy</strong><strong>&rsquo;</strong><strong>s territory</strong>&nbsp;now. I would have never thought that their headquarters was right here.</p>
+<p>And just in time, too. Tulan, our computer forensic specialist, just detected a <strong><strong>hack in our database</strong></strong>. Something tells me that whoever has done the hacking is the suspect. No one should have access to the files except for the CSIB.</p>
+<p>I will now transmit the data gathered by the forensic team. However, the <strong><strong>data is corrupted</strong></strong>. Try your best to figure out the <strong><strong>IP address</strong></strong>&nbsp;of the thing. This should lead you to the suspect.</p>
+<p>Return to the crime scene once done.</p>
+<p>Remember the words: <strong><strong>THE INFORMATION PRODUCER.</strong></strong></p>
+--- C.S.I.B Historical Database Department Head, Khala.
+        ]]>
+    </string>
+    <string name="txt_h5_puzzle">
+        <![CDATA[
+<p>Puzzle&nbsp;5:</p>
+<p>[POSSIBLE LOCATION KEY OF LOCATION ID: LENGTH OF FIRST PASSCODE, LENGTH OF SECOND PASSCODE, NOW HOLY NUMBER,LENGTH OF LAST PASSCODE, then, CYCLE THROUGH till the end of the data.]</p>
+<p>Encrypted Location ID: 3734628253916374392163</p>
+DJWOCKAEIDMCYTCAIEKCNDOCKELQAUCJEKSUAWNXHM***data corrupted****
+        ]]>
+    </string>
+    <string name="txt_hidden_a3">
+        <![CDATA[
+<p>Agent, I trust you finished the task assigned by Mr. Schneider? Good, good&hellip; Now we know that the suspect is likely <strong>Parisian</strong>. Great job.</p>
+<p>There is still one more extra clue before we can recreate a 2D model of the suspect&rsquo;s face---yes, we can do that. All we have to do is to find the <strong><strong>first crime scene location</strong></strong>.</p>
+<p>You should know this by now, but there are strong evidence that the victim was <strong><strong>brought into </strong></strong>one particular place <strong><strong>before death</strong></strong>. Luckily, although the surveillance camera is corrupted, the <strong><strong>audio system</strong></strong>&nbsp;still works&hellip; Sort of. Look, our computer specialists are working on it, but I trust in your abilities to find out the <strong><strong>first </strong></strong><strong><strong>&ldquo;</strong></strong><strong><strong>crime scene</strong></strong><strong><strong>&rdquo;</strong></strong>. Once you find it, go to the <strong><strong>portrait room</strong></strong>&nbsp;just <strong><strong>upstairs</strong></strong>&nbsp;to send me a message.</p>
+--- C.S.I.B Information Department Head, &nbsp;Sunasapta
+        ]]>
+    </string>
+    <string name="txt_a3_puzzle">
+        <![CDATA[
+
+        ]]>
+    </string>
+    <string name="txt_hidden_a4">
+        <![CDATA[
+<p>The monologue of this guy is&hellip;. interesting. Best to keep that on your mind, agent. Anyways, according to your data, we&rsquo;ve reconstructed a 2D model of the <strong>suspect</strong><strong>&rsquo;</strong><strong>s</strong>&nbsp;face. It&rsquo;s not perfect though, and we&rsquo;ve limited the suspects to around 5 people. Their files are shown in here. Try to <strong>match </strong>what you know to see who is most likely the culprit. Our forces are surrounding the school, so you just have to get to the <strong>interrogation room</strong>&nbsp;in the <strong>rooms</strong>&nbsp;inside to the <strong>paper databases</strong>&nbsp;and send us the <strong>last name</strong>&nbsp;of the suspect there. I have a feeling things are not that simple&hellip;</p>
+--- C.S.I.B Information Department Head, &nbsp;Sunasapta
+        ]]>
+    </string>
+    <string name="txt_a4_puzzle">
+        <![CDATA[
+
+        ]]>
+    </string>
+    <string name="txt_hidden_a5">
+        <![CDATA[
+<p>Info: Interogation &rarr; &ldquo;&rdquo;&rdquo;&rdquo;Leader&rdquo;&rdquo;&rdquo;&rdquo;&rdquo;</p>
+<p>Suspect: Hugh Osleton</p>
+<p>Great job, Agent Videlya!</p>
+<p>I think you got it right! However, I don&rsquo;t think this is the end. We&rsquo;re interrogating the suspect now, and he seemed to point out that there was a <strong><strong>major boss</strong></strong>&nbsp;behind all this. We might be onto something.</p>
+<p>Can you make sense of the interrogation? I&rsquo;ve sent the video and the <strong><strong>transcript</strong></strong>&nbsp;of the interrogation. See if you can figure out the boss&rsquo;s <strong><strong>real name</strong></strong>. Go back to the <strong><strong>corpse at the track field</strong></strong>&nbsp;once you are done.</p>
+<p>Remember the words: <strong><strong>SOUND IS THE VESSEL OF INFO</strong></strong>.</p>
+<p>Goodbye for now,</p>
+--- C.S.I.B Information Department Head, &nbsp;Sunasapta
+        ]]>
+    </string>
+    <string name="txt_a5_puzzle">
+        <![CDATA[
+
+        ]]>
+    </string>
+    <string name="txt_f0">
+        <![CDATA[
+<p>Hello, Scientist.</p>
+<p>Thank you for coming to China on such short notice from your base lab in Germany, Dr. Ziel Spitz. The kit has been prepared for you, and the lab has also been set up for your usage. According to primary investigation, there are no noticeable <strong><strong>external injuries</strong></strong>, so we suspect that it was <strong><strong>poison</strong></strong>. I suggest you go to the <strong><strong>restaurant</strong></strong>&nbsp;nearby and collect some samples of the <strong><strong>food</strong></strong>&nbsp;to test whether or not the<strong><strong>&nbsp;food</strong></strong>&nbsp;has been poisoned. Good luck.</p>
+<p>To <strong><strong>access the database</strong></strong>, just use your name. No capitals or space needed.</p>
+--- C.S.I.B Leader, Athello Apona
+        ]]>
+    </string>
+    <string name="txt_hidden_f1">
+        <![CDATA[
+<p>Dr. Spitz, nice to see you again. I trust you have already picked up your kit? Good, good&hellip; Well, here we are, in the canteen. I&rsquo;ve go on and checked the menu&rsquo;s of the <strong>nearest menu</strong>&nbsp;closest to the estimated time of death, and here are the samples. I&rsquo;ve sent the analysis data to you&hellip; See if you can make any sense of these. I&rsquo;ve already ruled out a lot, and what&rsquo;s left are: CYANIDE, STRYCHNINE, ARSENIC, RICIN, HENBANE, CONIINE, or simple NONE.</p>
+<p>Once you get the results, meet me in the <strong><strong>lab</strong></strong>. You are a <strong><strong>forensic biological scientist.</strong></strong>&nbsp;You know which <strong><strong>lab</strong></strong>&nbsp;it is.</p>
+----CSIB Forensic Department Head, Dee Oksi Ennei
+        ]]>
+    </string>
+    <string name="txt_f1_puzzle">
+        <![CDATA[
+<p>Puzzle 1:</p>
+<p>[The forensic department have discovered a new reagent that can test the presence of multiple poisons at the same time. Although the reagent are still acting somewhat weird, we decided to use them in order to finish all testings in time. Based on past experience, the data we gain can get provide an answer, but it requires some reasoning&hellip;]</p>
+<p>Notice:</p>
+<ol>
+<li>When only one compound is tested, the reactant will change color if the compound is present.</li>
+<li>When two compound are tested together, the reactant will not change if both compound was present.</li>
+<li>When three compound are tested together, the reactant will change color if none, one, or two compounds present, or else it will not change.</li>
+<li>When four compound are tested together, the reactant will change color if there are none, three, or four compound in the food, else it will not change.</li>
+<li>If CYANINE was tested but not found, the result will be the opposite of what is expected.</li>
+</ol>
+<p>&nbsp;</p>
+<p>Test 1: test for HENBANE, STRYCHNINE, RICIN. &mdash;&gt; change color.</p>
+<p>Test 2: test for CYANINE, ARSENIC, RICIN. &mdash;&gt; no result.</p>
+<p>Test 3: test for ARSENIC, CONIINE, HENBANE, STRYCHNINE. &mdash;&gt; change color.</p>
+<p>Test 4: test for CONIINE. &mdash;&gt; no reaction.</p>
+Test 5: test for STRYCHNINE. &mdash;&gt; no reaction
+        ]]>
+    </string>
+    <string name="txt_hidden_f2">
+        <![CDATA[
+<p>You made it! Sorry, I didn&rsquo;t have time to text you, so here&rsquo;s my voice instead. It&rsquo;s strange how the cause of death <strong>isn</strong><strong>&rsquo;</strong><strong>t poison</strong>&nbsp;isn&rsquo;t it? I can&rsquo;t think of another reason why a healthy individual would just die in the middle of the day. I may need further research&hellip; Anyway, here is the <strong>autopsy results</strong>. I&rsquo;ve also dug up the <strong>other cases</strong>&nbsp;from the <strong>Sigil Killer</strong>. Here are their files as well.</p>
+<p>See if you can find anything <strong><strong>strange</strong></strong>. I would look at the <strong><strong>abnormality</strong></strong>&nbsp;that doesn&rsquo;t match the cause of death. I await your information in the <strong><strong>analysis lab</strong></strong>. It&rsquo;s <strong><strong>near</strong></strong>&nbsp;you---the room also serves as a <strong><strong>training facility</strong></strong>&nbsp;for forensic biologist interns. I think you know where it is. It&rsquo;s on this floor too.</p>
+Good luck. Ennei out.
+        ]]>
+    </string>
+    <string name="txt_f2_puzzle">
+        <![CDATA[
+The victims estimate time of death is at 3:00 pm.
+        ]]>
+    </string>
+    <string name="txt_hidden_f3">
+        <![CDATA[
+<p>...I suspected that it was the <strong>brain signal</strong>&nbsp;as well. Something tells me that we need further</p>
+<br />I&rsquo;ve left a brain scan for you. See if you can figure out which <strong><strong>part</strong></strong>&nbsp;of the brain is behaving strangely. Good luck! I&rsquo;ll be waiting in the <strong><strong>metaphysics lab</strong></strong>. We might have to deal with the metaphysics here. It&rsquo;s on the <strong><strong>same floor</strong></strong>. There&rsquo;s a bunch of <strong><strong>posters</strong></strong>&nbsp;in there about&nbsp;<strong><strong>chess</strong></strong>&nbsp;and stuff. Also the lab is currently focusing on the <strong><strong>philosophy of China</strong></strong>---you know where it is. Good luck!&nbsp;investigation on that, since it looks like the <strong><strong>brain waves</strong></strong>&nbsp;becomes more intense even when the person dies!
+        ]]>
+    </string>
+    <string name="txt_f3_puzzle">
+        <![CDATA[
+
+        ]]>
+    </string>
+    <string name="txt_hidden_f4">
+        <![CDATA[
+This is truly very weird, what is going on in the <strong>subcortex</strong>&nbsp;of the brain that will cause such <strong>intense activities</strong>? Actually, this reminds me of something&hellip; Something that I read a long time before. Wait a second&hellip; here, found it, I think you might want to read this, the <strong><em>theory of the soul</em></strong>, it is describing symptoms similar to the victim. However, it is probably a little bit too old, some of the data is <strong>buggy</strong>. Try to find the <strong>crucial chemica</strong>l that is used to make the recipe, I think for some reasons it is <strong>completely illegible</strong>. After you decided on your answer, come to the elemental room. It is located in the <strong>first building</strong>, I think there is a lot of <strong>periodic tables</strong>&nbsp;for reference purposes.
+        ]]>
+    </string>
+    <string name="txt_f4_puzzle">
+        <![CDATA[
+&ldquo;This&nbsp;is a recipe for those th#t admires the puren^ss of human mind. The pneuma (or soul) was found in the human brain. It is like a light tower guiding every single activities in life. The pneuma can be extracted through several methods, and once it is ext!acted artificially, the human being will loose all abilities to regulate all bodily activities, and the &gt;uman conscious will sink in*o the&nbsp;subcortex layer of the brain. This recipe requires several ingredients, nether wart, #^*&gt;^!, monkey blood, and kitchen dust.&rdquo;
+        ]]>
+    </string>
+    <string name="txt_hidden_f5">
+        <![CDATA[
+<p>Okay, <strong>aether</strong>? This information might be crucial to find the sigil killer. I&rsquo;ve noticed that their is also a <strong>strange peak</strong>&nbsp;in the access of this file on aether when I found it as well&hellip; No one should be interested in such an absurd recipe expect now. The person who read the file should be related to the <strong>suspect</strong>&nbsp;then. Try to find <strong>her name</strong>&nbsp;using the data on the search engine. Remember, the result did not show<strong>&nbsp;unanimous times</strong>!</p>
+[Remember the words: NOSE KNOWS]
+        ]]>
+    </string>
+    <string name="txt_f5_puzzle">
+        <![CDATA[
+TIME IS OF THE ESSENCE. FOCUS ON POSITION IN THE ALPHABET
         ]]>
     </string>
 </resources>

@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -36,11 +37,18 @@ public class ScannerActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(ScannerActivity.this, "Scanned! ", Toast.LENGTH_SHORT).show();
-                        try {
-                            RouteC.class.getDeclaredMethod("showC1");
-                        } catch (NoSuchMethodException e) {
-                            e.printStackTrace();
+                        int resultInt = 60;
+                        try
+                        {
+                            resultInt = Integer.parseInt(result.getText());
                         }
+                        catch (Exception e)
+                        {
+
+                        }
+                        Intent intent = new Intent();
+                        intent.putExtra("result", resultInt);
+                        setResult(RESULT_OK, intent);
                         finish();
                     }
                 });

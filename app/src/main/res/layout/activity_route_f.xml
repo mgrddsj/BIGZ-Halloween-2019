@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RouteC">
+    tools:context=".RouteF">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -240,7 +240,7 @@
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         android:background="#FFFFFF"
-                        app:srcCompat="@drawable/c2_cipher" />
+                        app:srcCompat="@drawable/f2_puzzle" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -328,16 +328,14 @@
                     android:background="#FFFFFF"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/c3_puzzle_txt"
-                        android:layout_width="wrap_content"
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="4dp"
                         android:layout_weight="1"
+                        android:adjustViewBounds="true"
                         android:background="#FFFFFF"
-                        android:text="Puzzle3: \n[COORDINATES: (y,x),(y,x),(y,x),(y,x),(y,x),(y,x),(y,x)…] \n422215441541411526452326261215311114153316422215411532413336513336211132413316422215221536154223134115511541163336442341233332151136411633362215113623322131334342221633364134151125233221262331124116333616151526233221113214323341151633364131152626233221 "
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp" />
+                        app:srcCompat="@drawable/f3_puzzle" />
 
                 </LinearLayout>
 

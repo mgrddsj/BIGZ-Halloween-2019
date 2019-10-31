@@ -1,5 +1,6 @@
 package com.jesse.bigzhalloween;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -21,6 +22,7 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -104,7 +106,36 @@ public class RouteC extends AppCompatActivity {
     public void startScanning()
     {
         Intent intent = new Intent(this, ScannerActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 233);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == 233)
+        {
+            if (resultCode == RESULT_OK);
+            {
+                Bundle scanResult = Objects.requireNonNull(data).getExtras();
+                int scanResultInt = (Integer)scanResult.get("result");
+                switch (scanResultInt)
+                {
+                    case 11:
+                        showC1();
+                    case 12:
+                        showC2();
+                    case 13:
+                        showC3();
+                    case 14:
+                        showC4();
+                    case 15:
+                        showC5();
+                    case 16:
+                        showCSuspect();
+                    default:
+                        Toast.makeText(this, "The QR Code you scanned cannot be recognized. ", Toast.LENGTH_SHORT);
+                }
+            }
+        }
     }
 
     public void showC1()

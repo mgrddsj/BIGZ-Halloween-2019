@@ -141,7 +141,7 @@ public class RouteA extends AppCompatActivity {
         c3.setVisibility(View.VISIBLE);
         c3.setAlpha(0f);
         c3.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c3_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c3)));
+        ((TextView) findViewById(R.id.c3_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_a3)));
     }
 
     public void showC3Puzzle()
@@ -150,7 +150,7 @@ public class RouteA extends AppCompatActivity {
         c3Puzzle.setVisibility(View.VISIBLE);
         c3Puzzle.setAlpha(0f);
         c3Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c3_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c3_puzzle)));
+        ((TextView) findViewById(R.id.c3_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a3_puzzle)));
     }
 
     public void showC4()
@@ -158,7 +158,7 @@ public class RouteA extends AppCompatActivity {
         c4.setVisibility(View.VISIBLE);
         c4.setAlpha(0f);
         c4.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c4_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c4)));
+        ((TextView) findViewById(R.id.c4_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_a4)));
     }
 
     public void showC4Puzzle()
@@ -167,7 +167,7 @@ public class RouteA extends AppCompatActivity {
         c4Puzzle.setVisibility(View.VISIBLE);
         c4Puzzle.setAlpha(0f);
         c4Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c4_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c4_puzzle)));
+        ((TextView) findViewById(R.id.c4_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a4_puzzle)));
     }
 
     public void showC5()
@@ -175,7 +175,7 @@ public class RouteA extends AppCompatActivity {
         c5.setVisibility(View.VISIBLE);
         c5.setAlpha(0f);
         c5.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c5_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_c5)));
+        ((TextView) findViewById(R.id.c5_hidden_txt)).setText(Html.fromHtml(getString(R.string.txt_hidden_a5)));
     }
 
     public void showC5Puzzle()
@@ -184,7 +184,7 @@ public class RouteA extends AppCompatActivity {
         c5Puzzle.setVisibility(View.VISIBLE);
         c5Puzzle.setAlpha(0f);
         c5Puzzle.animate().alpha(1f).setDuration(animationTime).setListener(null);
-        ((TextView) findViewById(R.id.c5_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_c5_puzzle)));
+        ((TextView) findViewById(R.id.c5_puzzle_txt)).setText(Html.fromHtml(getString(R.string.txt_a5_puzzle)));
     }
 
     public void showCSuspect()
