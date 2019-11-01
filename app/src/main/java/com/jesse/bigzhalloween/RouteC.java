@@ -115,18 +115,8 @@ public class RouteC extends AppCompatActivity {
     public void onBackPressed()
     {
         // Do nothing when back is pressed.
+        Toast.makeText(this, "Don't lose your determination! \nYou can't change the character once selected. ", Toast.LENGTH_SHORT).show();
     }
-
-//    public void fabSetup()
-//    {
-//        fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                startScanning();
-//            }
-//        });
-//    }
 
     public void startScanning(View view)
     {
@@ -210,8 +200,16 @@ public class RouteC extends AppCompatActivity {
                             Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
                         }
                         break;
+                    case 61:
+                        SharedPreferences sharedPreferences = this.getSharedPreferences("progress", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putInt("route", 0);
+                        Intent intent = new Intent(this, MainActivity.class);
+                        startActivity(intent);
+                        editor.commit();
+                        break;
                     default:
-                        Toast.makeText(this, "Cannot recognize this QR code. ", Toast.LENGTH_SHORT);
+                        Toast.makeText(this, "Cannot recognize this QR code. ", Toast.LENGTH_SHORT).show();
                         break;
                     }
             }

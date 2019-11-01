@@ -12,7 +12,7 @@
 <p>To <b>access the database</b>, just use your name. No capitals or space needed.</p>
 --- C.S.I.B Director, Athello Apona]]></string>
     <string name="txt_hidden_c1">
-        <![CDATA[Welcome to the Electronic Database, Listen. I heard from Apona that you’re going to have to access the <b>Sigil Killer’s message</b>? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the <b>second word</b>. It would be wonderful if you could go to the analysis lab in the first building here and talk to the specialist about it. I think he was <b>Miro Jurisic</b>? Remember, it’s not the room at the last end of the hallway. Anyways, Good luck. <p></p>--- C.S.I.B. Computer Forensic Department Director, Aring Tulan]]>
+        <![CDATA[Welcome to the Electronic Database, Liste. I heard from Apona that you’re going to have to access the <b>Sigil Killer’s message</b>? Well, here ya go! We’ve deciphered pretty much all of it, but we are stuck on the <b>second word</b>. It would be wonderful if you could go to the analysis lab in the first building here, I think he was <b>Miro Jurisic</b> that is in charge? Anyways, Good luck. <p></p>--- C.S.I.B. Computer Forensic Department Director, Aring Tulan]]>
     </string>
     <string name="txt_c1_puzzle">
         <![CDATA[
@@ -189,7 +189,7 @@ Remember the words:<strong> SENSES</strong> LIE SOMETIMES FOR OUR SAKE.
     <string name="txt_h0">
         <![CDATA[
 <p>Hello, Researcher.</p>
-<p>Been expecting you here, Dr. Qiu. You are the go-to researcher in the Guangzhou faction here, anyway. We have been setting up a <strong>remote database</strong> in the<strong> third building </strong>for you here; unfortunately, due to cybersecurity concerns they are all in <strong>paper forms</strong>, We could only allow a <strong>couple computers</strong> there. Perhaps you could go take a look?</p>
+<p>Been expecting you here, Dr. Nuo Qiu. You are the go-to researcher in the Guangzhou faction here, anyway. We have been setting up a <strong>remote database</strong> in the<strong> third building </strong>for you here; unfortunately, due to cybersecurity concerns they are all in <strong>paper forms</strong>, We could only allow a <strong>couple computers</strong> there. Perhaps you could go take a look?</p>
 <p>To <strong>access the database</strong>, just use your name. No capitals or space needed.</p>
 --- C.S.I.B Leader, XXX
         ]]>
@@ -210,7 +210,7 @@ Here are the victims portfolio created by the forensic scientist.
     </string>
     <string name="txt_hidden_h2">
         <![CDATA[
-<p>So the commonalities are that they all have one of their body parts removed, huh&hellip; And it seems like that they are all <strong>sensory organs</strong>. Hmmm&hellip; I can&rsquo;t help but shake the feeling that something like that also happened in the past, the researchers also found that there is some weird symbols embedded on every victims neck, they looks pretty familiar&hellip; Perhaps these documents can help? Also, I will send you the updated examination on the symbols. I recall that there is a certain <strong>civilization</strong> that likes such bloodshed. Go to the room <strong>2 floors directly above</strong> this room---that&rsquo;s our <strong>occult collection</strong>, if you do remember. Text me the civilization once you&rsquo;re there.</p>
+<p>So the commonalities are that they all have one of their body parts removed, huh&hellip; And it seems like that they are all <strong>sensory organs</strong>. Hmmm&hellip; I can&rsquo;t help but shake the feeling that something like that also happened in the past, the researchers also found that there is some weird symbols embedded on every victims neck, they looks pretty familiar&hellip; Perhaps these documents can help? Also, I will send you the updated examination on the symbols. I recall that there is a certain <strong>civilization</strong> that likes such bloodshed. Go to the room <strong>1 floor directly above</strong> this room---that&rsquo;s our <strong>occult collection</strong>, if you do remember. Text me the civilization once you&rsquo;re there.</p>
 C.S.I.B Historical Database Department Head, ABC.
         ]]>
     </string>
@@ -275,7 +275,7 @@ DJWOCKAEIDMCYTCAIEKCNDOCKELQAUCJEKSUAWNXHM***data corrupted****
         <![CDATA[
 <p>Agent, I trust you finished the task assigned by Mr. Schneider? Good, good&hellip; Now we know that the suspect is likely <strong>Parisian</strong>. Great job.</p>
 <p>There is still one more extra clue before we can recreate a 2D model of the suspect&rsquo;s face---yes, we can do that. All we have to do is to find the <strong><strong>first crime scene location</strong></strong>.</p>
-<p>You should know this by now, but there are strong evidence that the victim was <strong><strong>brought into </strong></strong>one particular place <strong><strong>before death</strong></strong>. Luckily, although the surveillance camera is corrupted, the <strong><strong>audio system</strong></strong>&nbsp;still works&hellip; Sort of. Look, our computer specialists are working on it, but I trust in your abilities to find out the <strong><strong>first </strong></strong><strong><strong>&ldquo;</strong></strong><strong><strong>crime scene</strong></strong><strong><strong>&rdquo;</strong></strong>. Once you find it, go to the <strong><strong>portrait room</strong></strong>&nbsp;just <strong><strong>upstairs</strong></strong>&nbsp;to send me a message.</p>
+<p>You should know this by now, but there are strong evidence that the victim was <strong><strong>brought into </strong></strong>one particular place <strong><strong>before death</strong></strong>. Luckily, although the surveillance camera is corrupted, the <strong><strong>audio system</strong></strong>&nbsp;still works&hellip; Sort of. Look, our computer specialists are working on it, but I trust in your abilities to find out the <strong><strong>first </strong></strong><strong><strong>&ldquo;</strong></strong><strong><strong>crime scene</strong></strong><strong><strong>&rdquo;</strong></strong>. Once you find it, go to the <strong><strong>portrait room</strong></strong>&nbsp;just <strong><strong>upstairs</strong></strong>&nbsp;to send me a message. The room is goverened by Ms. Adele. </p>
 --- C.S.I.B Information Department Head, &nbsp;Sunasapta
         ]]>
     </string>
@@ -424,6 +424,24 @@ TIME IS OF THE ESSENCE. FOCUS ON POSITION IN THE ALPHABET
 <p>We are also a role playing game, there are five characters involved in this murder case. The forensic scientist, paranormal scientist, field agent, cryptanalyst, and historian. Feel free to be anyone you want, but once you choose, you <strong>can&rsquo;</strong><strong>t change</strong> you character. If you want some more challenge, we recommend you to choose the paranormal scientist, the puzzles provided is <strong>harder</strong> than the other routes.</p>
 <p>Some of the puzzle might be a little difficult, you can discuss with other players that is playing in the same route, or even team up with others and play on the same phone. When you really can&rsquo;t solve the puzzle, always feel free to come to the initial location and ask the <strong>staff</strong> for the <strong>password </strong>by telling them which character you are and which stage you are in. For example, the third stage of the cryptanalyst can be called C-3. However, YOU WILL NOT ENJOY THE PROCESS AS MUCH IF YOU DO SO.</p>
 <strong>REMEMBER,</strong> if you found a room that is not accessible, refer back here: If you are asked to go to the ping pong room, look around in the right side hallway of that floor, if it is the library, go to the left entrance to find the code, if it is the discussion room inside the library, go to the right entrance, for the small library, simply look around the left hallway on that floor.&nbsp;
+        ]]>
+    </string>
+    <string name="txt_all0">
+        <![CDATA[
+<p>Hello? Do you copy?</p>
+<p>I am Athello Apona, trasmitting to you directly from the CSIB headquarters. Although you have identified one suspect, according to our new information 4 other agents have also identified suspects that are equally likely in committing this crime.</p>
+<p>Something must be going on. Something big. There must be a true mastermind organizing all of this.</p>
+<p>It is up to you and 4 other agents to find out the truth of this case. But beware, this is much more difficult than anything you have encountered thus far.</p>
+Should you choose to accept this task, go to the pantry at Building 1, Floor 5, in groups of 5.
+        ]]>
+    </string>
+    <string name="txt_hidden_all0">
+        <![CDATA[
+<p>Your group should have the following, including you:</p>
+<p>Cryptanalyst Sypher Liste, Field Agent Iskat Videlya, Forensic Scientist Ziel Spitz, Crime Researcher Nuo Qiu and Paranormal Scientist Sigma Kurashiki.</p>
+<p>The password is the last name of all your guides throughout the game, excluding me and Mr. Schneider. Type it using the order above and no capital letters or spaces.</p>
+<p>Good luck.</p>
+----C.S.I.B DIrector, Athello Apona
         ]]>
     </string>
 </resources>

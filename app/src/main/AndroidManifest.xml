@@ -11,38 +11,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Congrats"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"></activity>
-        <activity android:name=".Help"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteF"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteP"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteH"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteA"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".ExtraChallengeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Congrats"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Help"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RouteF"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RouteP"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RouteH"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RouteA"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ScannerActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteC"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".RouteSelectActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".RouteC"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RouteSelectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

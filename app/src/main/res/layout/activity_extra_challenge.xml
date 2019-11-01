@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExtraChallengeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <TextView
+                    android:id="@+id/all0_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:text="Extra Challenge"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all0_hidden"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="visible"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <TextView
+                    android:id="@+id/all0_txt_hidden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:text="Extra Challenge"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/all1_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/all1_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="text"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/all1_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="all1Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/all1_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="Are you ready? Good luck. Here is the poem that\nwe’ve extracted from your suspects. Remember to share your knowledge learnt from your respective routes. This might be the truth of this case. It is said that the password to the master document of this cult is in here; access the database from the pantry\n on floor 4 and find the mastermind there.\nUnfortunately, there is a huge data disconnection\n in that area, so I can’t transmit to you anymore. Return to the first crime scene once you’re done finding out the name of the mastermind. Good luck.\n-----C.S.I.B Director Athello Apona"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all1_puzzle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/all1_puzzle_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:text="1 In the name of the God of Night,\n2 We will harvest and get rid of light\n3 By creating an object for you to reside\n4 And soon you will descend and show power and might!\n\n5 Six things are needed---five are already trivial\n6 But one is hard to get; the essence of humans, to feel\n7 Leaving from the base of Europe, we go\n8 To the base of Asia, to harvest what you sow\n\nThe first, third, sixth, seventh, eight on top\nRefers to words that each of you know\nThe words that combine, from top to bottom\nWill make a map of a perfect square to draw\nTo find the ultimate secret you seek\nFollow the path of the God’s words that was leaked\n \n“TLVSRNGZGPEOZE TACZETLVESSELESSEVSRNGZHOU AACZELVOULPAOHZG AACZELVSRGZHOU  TACZETLVESSELESSEVSRNGZHOU NRSVLTISLUUAALAT TLVSRNGZGPEOZE”’"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/all2_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FFFFFF"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/all2_input"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Tap to input Password"
+                            android:inputType="text"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray" />
+
+                        <Button
+                            android:id="@+id/all2_check"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_check"
+                            android:onClick="all2Verify" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/all2_hidden_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:text="MASTER DOCUMENT UNLOCKED.\n\nTHE PRIEST'S NAME IS HIDDEN INSIDE."
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/all2_puzzle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="4dp"
+                app:cardPreventCornerOverlap="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/all2_puzzle_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:text="(Please head to the tent)"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="startScanning"
+        app:srcCompat="@drawable/ic_scan" />
+</RelativeLayout>

@@ -110,4 +110,10 @@ SharedPreferences.Editor editor;
         Intent intent = new Intent(this, RouteF.class);
         startActivity(intent);
     }
+
+    public void gotoCongrats(View view)
+    {
+        Intent intent = new Intent(this, Congrats.class);
+        startActivity(intent);
+    }
 }

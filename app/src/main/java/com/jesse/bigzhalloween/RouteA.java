@@ -1,11 +1,13 @@
 package com.jesse.bigzhalloween;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
@@ -39,6 +41,8 @@ public class RouteA extends AppCompatActivity {
     CardView c5Puzzle;
     CardView cSuspect;
 
+    int currentProgress;
+
     MediaPlayer audioText;
     MediaPlayer audioText2;
 
@@ -46,7 +50,6 @@ public class RouteA extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_route_a);
-        fabSetup();
 
         animationTime = getResources().getInteger(android.R.integer.config_shortAnimTime);
 
@@ -55,34 +58,12 @@ public class RouteA extends AppCompatActivity {
         c0.animate().alpha(1f).setDuration(animationTime).setListener(null);
         ((TextView) findViewById(R.id.c0_txt)).setText(Html.fromHtml(getString(R.string.txt_a0)));
 
-        // Launch c1
-//        Handler handler = new Handler();
-//        handler.postDelayed(new Runnable() {
-//            @Override
-//            public void run() {
         c1 = findViewById(R.id.c1);
-        showC1();
-//            }
-//        }, 10000);
-
-        // launch c2
         c2 = findViewById(R.id.c2);
-        showC2();
-
-        // launch c3
         c3 = findViewById(R.id.c3);
-        showC3();
-
-        // launch c4
         c4 = findViewById(R.id.c4);
-        showC4();
-
-        // launch c5
         c5 = findViewById(R.id.c5);
-        showC5();
-
-        // launch suspect selection
-        showCSuspect();
+        currentProgress = 1;
 
         // Audio text
         audioText = MediaPlayer.create(this, R.raw.schneider);
@@ -171,23 +152,105 @@ public class RouteA extends AppCompatActivity {
     public void onBackPressed()
     {
         // Do nothing when back is pressed.
+        Toast.makeText(this, "Don't lose your determination! \nYou can't change the character once selected. ", Toast.LENGTH_SHORT).show();
     }
 
-    public void fabSetup()
+    public void startScanning(View view)
     {
-        fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startScanning();
+        Intent intent = new Intent(RouteA.this, ScannerActivity.class);
+        startActivityForResult(intent, 1);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1)
+        {
+            if (resultCode == RESULT_OK)
+            {
+                Bundle resultBundle = data.getExtras();
+                int resultInt = resultBundle.getInt("result");
+                switch (resultInt) {
+                    case 21:
+                        if (currentProgress>=1)
+                        {
+                            showC1();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 22:
+                        if (currentProgress>=2)
+                        {
+                            showC2();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 23:
+                        if (currentProgress>=3)
+                        {
+                            showC3();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 24:
+                        if (currentProgress>=4)
+                        {
+                            showC4();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 25:
+                        if (currentProgress>=5)
+                        {
+                            showC5();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 26:
+                        if (currentProgress>=6)
+                        {
+                            showCSuspect();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
+                        break;
+                    case 61:
+                        SharedPreferences sharedPreferences = this.getSharedPreferences("progress", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putInt("route", 0);
+                        Intent intent = new Intent(this, MainActivity.class);
+                        startActivity(intent);
+                        editor.commit();
+                        break;
+                    default:
+                        Toast.makeText(this, "Cannot recognize this QR code. ", Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
-        });
-    }
-
-    public void startScanning()
-    {
-        Intent intent = new Intent(this, ScannerActivity.class);
-        startActivity(intent);
+        }
     }
 
     public void showC1()
