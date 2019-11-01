@@ -48,6 +48,8 @@ public class RouteC extends AppCompatActivity {
     CardView c5Puzzle;
     CardView cSuspect;
 
+    int currentProgress;
+
     MediaPlayer audioText;
 
     @Override
@@ -67,6 +69,7 @@ public class RouteC extends AppCompatActivity {
         c3 = findViewById(R.id.c3);
         c4 = findViewById(R.id.c4);
         c5 = findViewById(R.id.c5);
+        currentProgress = 1;
 
         // Audio text
         audioText = MediaPlayer.create(this, R.raw.sum);
@@ -142,22 +145,70 @@ public class RouteC extends AppCompatActivity {
                 int resultInt = resultBundle.getInt("result");
                 switch (resultInt) {
                     case 11:
-                        showC1();
+                        if (currentProgress>=1)
+                        {
+                            showC1();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     case 12:
-                        showC2();
+                        if (currentProgress>=2)
+                        {
+                            showC2();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     case 13:
-                        showC3();
+                        if (currentProgress>=3)
+                        {
+                            showC3();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     case 14:
-                        showC4();
+                        if (currentProgress>=4)
+                        {
+                            showC4();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     case 15:
-                        showC5();
+                        if (currentProgress>=5)
+                        {
+                            showC5();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     case 16:
-                        showCSuspect();
+                        if (currentProgress>=6)
+                        {
+                            showCSuspect();
+                            currentProgress++;
+                        }
+                        else
+                        {
+                            Toast.makeText(this, "You are not there yet. \nTry another QR code. ", Toast.LENGTH_SHORT).show();
+                        }
                         break;
                     default:
                         Toast.makeText(this, "Cannot recognize this QR code. ", Toast.LENGTH_SHORT);
